@@ -15,7 +15,14 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
     <title>icoffeemap</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_FUzEBfyjy4FWd8gxBvBU9");
+        })();
+    </script>
 </head>
 
 <body>
@@ -58,7 +65,7 @@
     <section>
         <!--main slideshow-->
 
-        <div id="homeSlider" class="carousel slide containerHomeSlide" data-ride="carousel">
+        <div id="homeSlider" class="carousel slide containerHomeSlide slideImage" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#homeSlider" data-slide-to="0" class="active"></li>
                 <li data-target="#homeSlider" data-slide-to="1"></li>
@@ -144,13 +151,74 @@
 
         </div>
         <!--google map-->
-        <div id="map">
+        <div class="container-fluid mapOuter">
+            <div class="row">
+                <div class="col" id="map"></div>
+
+                <div class="col" id="mapText">
+                    <ul class="list-group list-group">
+                        <li class="list-group-item">A<a href="https://goo.gl/maps/gr5347sZAPWsnuxW6"
+                                class="text-warning stretched-link" target="_blank">. Wall & Keogh
+                                Superior
+                                Teas</a></li>
+                        <li class="list-group-item">B<a href="https://goo.gl/maps/V1RbJw8A3AQJtcaAA"
+                                class="text-warning stretched-link" target="_blank"> IFI Café Bar</a></li>
+                        <li class="list-group-item">C<a href="https://goo.gl/maps/fSZFFWrZxUuedeJWA"
+                                class="text-warning stretched-link" target="_blank"> Fallon & Byrne</a></li>
+                        <li class="list-group-item">D<a href="https://goo.gl/maps/eSJrAaFfZ8HBUFASA"
+                                class="text-warning stretched-link" target="_blank"> The Pepper Pot</a></li>
+                        <li class="list-group-item">E<a href="https://goo.gl/maps/TJG7KFgW6XwTmhwG7"
+                                class="text-warning stretched-link" target="_blank"> 3FE</a></li>
+                        <li class="list-group-item">F<a href="https://g.page/twofiftysquare?share"
+                                class="text-warning stretched-link" target="_blank"> Two Fifty Square</a></li>
+                        <li class="list-group-item">G<a href="https://g.page/groveroadcafe?share"
+                                class="text-warning stretched-link" target="_blank"> Grove Road Cafe</a></li>
+                        <li class="list-group-item">H<a href="https://g.page/littlebirdcoffeeyoga?share"
+                                class="text-warning stretched-link" target="_blank"> Little Bird</a></li>
+                        <li class="list-group-item">I<a href="https://g.page/thecakecafedublin?share"
+                                class="text-warning stretched-link" target="_blank"> The Cake Cafe</a></li>
+                        <li class="list-group-item">J<a href="https://goo.gl/maps/aWXt8BkWDy2t8CCi6"
+                                class="text-warning stretched-link" target="_blank"> Container Coffee</a></li>
+                        <li class="list-group-item">K<a href="https://goo.gl/maps/dCL65agvnUPiYAvh7"
+                                class="text-warning stretched-link" target="_blank"> The Fumbally</a></li>
+                        <li class="list-group-item">L<a href="https://goo.gl/maps/k5gQa49RUcnMBNKR9"
+                                class="text-warning stretched-link" target="_blank"> Brother Hubbard</a></li>
+
+                    </ul>
+
+                </div>
+            </div>
         </div>
         <!--news letter -->
         <div>
-            <h1>form</h1>
-        </div>
-        </div>
+
+            <div class="container-fluid">
+                <div class="row newsletterContainer">
+
+                    <div class="center-form">
+                        <div class="newsletterInfo">
+                            <h3>News letter</h3>
+                            <h5>Sign up to the first to hear about our latest updates</h5>
+                        </div>
+                        <form onsubmit="return sendMail(this);">
+
+                            <div class="col-auto  mb-2">
+                                <input type="text" name="emailaddress" class="form-control" id="emailaddress"
+                                    placeholder="Email" required />
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-danger mb-2">Send</button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+
+
 
 
 
@@ -171,6 +239,7 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaqvMX_-jaNBWBobhK_jaNke7qliNHd6Q&callback=initMap">
     </script>
     <script src="assets/js/maps.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>

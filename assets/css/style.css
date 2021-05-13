@@ -18,8 +18,9 @@
 
 /*--------------------------------------------section*/
 /*----------------------------main slideshow*/
-.containerHomeSlide {
+.slideImage {
     width: 100%;
+
 
 }
 
@@ -39,8 +40,42 @@
 }
 
 /*----------------------------map*/
+.mapOuter {
+    margin: auto;
+
+}
+
 #map {
-    width: 80%;
     height: 600px;
-    margin: 10%;
+    width: 100%;
+    margin: 30px;
+
+}
+
+#mapText {
+    margin: 30px;
+
+
+}
+
+/*----------------------------news letter*/
+.newsletterContainer {
+    border: 2px solid lightgray;
+    margin: 30px 15% 30px 15%;
+}
+
+.newsletterInfo {
+    text-align: center;
+    margin: 10px 10px;
+}
+
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+button[type="submit"] {
+    margin: 15px 45% 30px 45%;
 }
