@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 
-
+:root {
+--fontFamily:'Inter', sans-serif;
+}
 
 /*--------------------------------------------heading*/
 /*----------------------------nav*/
@@ -8,12 +10,15 @@
 .nav-container {
     margin: 0px;
     padding: 0px;
+    font-family: 'Inter', sans-serif;
+  
 
 }
 
 .nav-text {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fontFamily);
     font-weight: 500;
+   
 }
 
 /*--------------------------------------------section*/
@@ -78,4 +83,31 @@
 
 button[type="submit"] {
     margin: 15px 45% 30px 45%;
+}
+
+/*----------------------------footer*/
+.list-inline-item:not(:last-child) {
+    margin: 0px 20px 0px 20px;
+}
+
+
+
+.socialLink li a i {
+    width: 32px;
+    height: 32px;
+    padding: 15px 0;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 5px;
+    text-align: center;
+    color: #e0dddd;
+    background: #0e0c0c;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.socialLink li a i:hover {
+    background: #dd580b;
 }
