@@ -23,17 +23,30 @@
 
 /*--------------------------------------------section*/
 /*----------------------------main slideshow*/
-.carousel .carousel-item {
-    height: 800px;
+.carousel-item {
+    height: 100vh;
+
 }
 
-.carousel-item img {
+.carousel-caption {
     position: absolute;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    min-height: 800px;
+    top: 38%;
+    text-transform: uppercase;
 }
+
+.carousel-caption h1 {
+    font-size: 3.8rem;
+    font-weight: 500;
+    letter-spacing: .3rem;
+    padding-bottom: 1rem;
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+
+}
+
 
 /*----------------------------two images hover*/
 .my-container {
