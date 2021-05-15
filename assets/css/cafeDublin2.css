@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+    --fontFamily: 'Inter', sans-serif;
+
+}
+
+/*--------------------------------------------heading*/
+/*----------------------------nav*/
+
+.nav-container {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+
+
+}
+
+.nav-text {
+    font-family: var(--fontFamily);
+    font-weight: 500;
+
+}
+
+/*--------------------------------------------section*/
+/*----------------------------main slideshow*/
+.box {
+    margin-top: 15vh;
+}
+
+.frame {
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    perspective: 500px;
+}
+
+.frame img {
+    width: 300px;
+    height: 300px;
+}
+
+.frame .details {
+    width: 70%;
+    height: 80%;
+    padding: 5% 8%;
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateY(90deg);
+    transform-origin: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    transition: all 0.4s ease-in;
+
+}
+
+.frame:hover .details {
+    transform: translate(-50%, -50%) rotateY(0deg);
+    opacity: 1;
+}

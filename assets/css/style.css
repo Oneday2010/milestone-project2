@@ -9,6 +9,7 @@
 /*----------------------------nav*/
 
 .nav-container {
+    
     margin: 0px;
     padding: 0px;
     font-family: 'Inter', sans-serif;
@@ -88,11 +89,11 @@
 
 .cafeList {
     color: black;
-    text-transform:lowercase;
+    text-transform: lowercase;
     font-weight: 700;
     font-style: italic;
     font-family: var(--fontFamily);
-   
+
 
 }
 
@@ -126,8 +127,8 @@ button[type="submit"] {
 
 /*----------------------------footer*/
 .footer-outer {
-    background-color: #ffc44c;
-    padding: 25px 25px 10px
+
+    padding: 25px 25px 10px;
 }
 
 .footerText {
