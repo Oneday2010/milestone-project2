@@ -8,6 +8,7 @@
 /*--------------------------------------------heading*/
 /*----------------------------nav*/
 
+
 .nav-container {
 
     margin: 0px;
@@ -28,29 +29,34 @@
 
 /*----------------------------five cafes image hover*/
 body {
-    background-color: blueviolet;
+    background-color: rgb(255, 252, 248);
+
+}
+
+p {
+    font-size: 16px;
 }
 
 .box {
-    margin-top: 15vh;
-    background-color: black;
-    z-index: -1;
+
+    max-width: 720px;
+    margin: 20vh auto 48px auto;
 }
 
 .cafePhoto {
- 
+    margin: 10px;
     text-align: center;
     position: relative;
     cursor: pointer;
     perspective: 500px;
-    
+
 
 }
 
 .cafePhoto img {
     width: 300px;
     height: 300px;
-    
+
 }
 
 .cafePhoto .review {
@@ -74,3 +80,4 @@ body {
     transform: translate(-50%, -50%) rotateY(0deg);
     opacity: 1;
 }
+
