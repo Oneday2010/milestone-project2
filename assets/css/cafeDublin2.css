@@ -25,6 +25,26 @@
 
 /*--------------------------------------------section*/
 /*----------------------------main slideshow*/
+body,
+html {
+    height: 100%;
+}
+
+.parallax {
+    /* The image used */
+    background: url("../images/cafesDublin2/wallKeogh.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*----------------------------five cafes image hover*/
 .box {
     margin-top: 15vh;
 }
