@@ -27,9 +27,9 @@
 /*--------------------------------------------section*/
 /*----------------------------main slideshow*/
 
-/*----------------------------five cafes image hover*/
+/*----------------------------cafes image hover*/
 body {
-    background-color: rgb(255, 252, 248);
+    background-color: rgb(252, 244, 235);
 
 }
 
@@ -41,6 +41,16 @@ p {
 
     max-width: 720px;
     margin: 20vh auto 48px auto;
+}
+
+.cafe-img-move {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
 }
 
 .cafePhoto {
@@ -81,3 +91,49 @@ p {
     opacity: 1;
 }
 
+/*----------------------------footer*/
+.footer-outer {
+
+    padding: 25px 25px 10px;
+}
+
+.footerText {
+    color: #ef6033;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--fontFamily);
+}
+
+.list-inline-item:not(:last-child) {
+    margin: 0px 20px 0px 20px;
+}
+
+
+.aboutLink .footerText:hover {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+.socialLink li a i {
+    width: 32px;
+    height: 32px;
+    padding: 15px 0;
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 5px;
+    text-align: center;
+    color: #fff;
+    background: #ef6033;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.socialLink li a i:hover {
+    background: #f7a043;
+}
