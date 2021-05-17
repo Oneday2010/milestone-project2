@@ -35,10 +35,10 @@ p {
     font-family: var(--fontFamily);
 }
 
-.box {
+.container {
 
     max-width: 720px;
-    margin: 20vh auto 48px auto;
+    margin: 10vh auto;
 }
 
 .cafe-img-move {
@@ -86,7 +86,7 @@ p {
 
 .cafePhoto:hover .review {
     transform: translate(-50%, -50%) rotateY(0deg);
-    opacity: 1;
+    opacity: 3;
 }
 
 
