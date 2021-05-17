@@ -13,7 +13,7 @@
 
     margin: 0px;
     padding: 0px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fontFamily);
 
 
 }
@@ -28,13 +28,11 @@
 /*----------------------------main slideshow*/
 
 /*----------------------------cafes image hover*/
-body {
-    background-color: rgb(252, 244, 235);
 
-}
 
 p {
     font-size: 16px;
+    font-family: var(--fontFamily);
 }
 
 .box {
@@ -91,12 +89,10 @@ p {
     opacity: 1;
 }
 
-/*----------------------------footer*/
 
+
+/*----------------------------footer*/
 .footer-outer {
-    position: absolute;
-  bottom: 0;
-  height: 100px;
 
     padding: 25px 25px 10px;
 }
