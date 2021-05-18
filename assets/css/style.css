@@ -68,6 +68,11 @@
     font-family: var(--fontFamily);
 
 }
+.test-card {
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+}
 
 
 /*----------------------------map*/
