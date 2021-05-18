@@ -2,9 +2,12 @@
 
 :root {
     --fontFamily: 'Inter', sans-serif;
-
+    --bagImgColor: linear-gradient(113.97246213018036deg, rgba(243, 243, 243, 1) 12.97582304526749%, rgba(255, 249, 237, 1) 45.09369488536155%, rgba(255, 228, 196, 1) 87.00360082304526%);
 }
 
+body {
+    background-image: var(--bagImgColor)
+}
 /*--------------------------------------------heading*/
 /*----------------------------nav*/
 
@@ -112,8 +115,9 @@
 
 /*----------------------------news letter*/
 .newsletterContainer {
-    border: 2px solid lightgray;
+    border: 2px solid rgb(197, 186, 186);
     margin: 30px 15% 30px 15%;
+    background-color: #fff;
 }
 
 .newsletterInfo {
@@ -135,7 +139,7 @@ button[type="submit"] {
 
 /*----------------------------footer*/
 .footer-outer {
-
+background-color: rgb(252, 242, 231);
     padding: 25px 25px 10px;
 }
 
