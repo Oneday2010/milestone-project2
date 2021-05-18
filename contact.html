@@ -65,25 +65,70 @@
 
     <!--section-->
     <div class="formContainer">
-        <div class="row">
-            <div class="boxTest">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iure ipsam impedit eligendi odit.
-                    Aliquid
-                    pariatur maxime debitis autem distinctio, magnam, architecto minima ipsa ex assumenda odio
-                    praesentium
-                    molestiae itaque?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iure ipsam impedit eligendi odit.
-                    Aliquid
-                    pariatur maxime debitis autem distinctio, magnam, architecto minima ipsa ex assumenda odio
-                    praesentium
-                    molestiae itaque?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos iure ipsam impedit eligendi odit.
-                    Aliquid
-                    pariatur maxime debitis autem distinctio, magnam, architecto minima ipsa ex assumenda odio
-                    praesentium
-                    molestiae itaque?</p>
+        <div class="row boxTest">
+
+
+            <div class="col-md-3">
+                <div class="card " style="width: 15rem;">
+                    <img src="./assets/images/coffee.png" class="card-img-top">
+                </div>
+
+                <div class=" card-body">
+                    <h2>Get it touch</h2>
+                    <h5>Do you know nice cafe in Dublin?</h5>
+                    <h5>We would love to hear from you</h5>
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-9">
+
+                <div class="col">
+                    <form onsubmit="return newsLetter(this);">
+                        <div class="form-group ">
+                            <label for="firstname" class="col-sm-2">First name</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="firstname" class="form-control" id="firstname"
+                                    placeholder="Frist name" required />
+                            </div>
+                        </div>
+                        <div class=" form-group ">
+                            <label for="lastname" class="col-sm-2">Last name</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="lastname" class="form-control" id="lastname"
+                                    placeholder="Last name" required />
+                            </div>
+                        </div>
+
+                        <div class=" form-group">
+                            <label for="emailaddress" class="col-sm-2">Email</label>
+                            <div class="col-sm-10">
+                                <input type="text" name="emailaddress" class="form-control" id="emailaddress"
+                                    placeholder="Email" required />
+                            </div>
+                        </div>
+                        <div class=" form-group">
+                            <label for="inputtext" class="col-sm-2">Message</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="inputtext"
+                                    placeholder="Type your message here"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                                <button type="submit" class="btn btn-danger mb-2">Send</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
             </div>
         </div>
+
+
     </div>
 
 

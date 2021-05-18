@@ -41,8 +41,14 @@ p {
 .container {
 
     max-width: 720px;
-    margin: 10vh auto;
+    margin: 15vh auto;
 }
+
+.box {
+    margin-top: 30%;
+}
+
+
 
 .cafe-img-move {
     background-position: center;
