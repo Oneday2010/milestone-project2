@@ -8,6 +8,7 @@
 body {
     background-image: var(--bagImgColor)
 }
+
 /*--------------------------------------------heading*/
 /*----------------------------nav*/
 
@@ -59,7 +60,7 @@ body {
 .homeTwoCard {
 
     text-align: center;
-   
+
 }
 
 .my-row {
@@ -69,8 +70,11 @@ body {
 .my-col {
     margin: 50px;
     font-family: var(--fontFamily);
+     border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 
 }
+
 .test-card {
     margin-top: 10px;
     border-radius: 15px;
@@ -82,6 +86,9 @@ body {
 .map-caption-outer {
 
     margin: 30px;
+     border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
 
 }
 
@@ -115,7 +122,9 @@ body {
 
 /*----------------------------news letter*/
 .newsletterContainer {
-    border: 2px solid rgb(197, 186, 186);
+    border: 2px solid rgb(255, 250, 239);
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
     margin: 30px 15% 30px 15%;
     background-color: #fff;
 }
@@ -139,7 +148,7 @@ button[type="submit"] {
 
 /*----------------------------footer*/
 .footer-outer {
-background-color: rgb(252, 242, 231);
+    background-color: rgb(252, 242, 231);
     padding: 25px 25px 10px;
 }
 

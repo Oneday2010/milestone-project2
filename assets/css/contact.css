@@ -27,15 +27,41 @@ body {
 
 /*--------------------------------------------section*/
 /*----------------------------form*/
+.cardImageText {
+    margin-top: 30px;
+    
+}
+.card {
+    border: none;
+
+}
+.card-body {
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    
+   
+}
+h5 {
+    font-size: 18px;
+
+}
+
 img {
     width:50%;
     height: 50%;
+     border-radius: 80px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
 .formContainer {
     margin-top: 50px;
     padding: 0;
     position: relative;
   
+}
+.contactFormOuter {
+    padding-left: 20%;
+
 }
 
 
