@@ -86,7 +86,7 @@
             <div class="col-md-9">
 
                 <div class="col contactFormOuter">
-                    <form onsubmit="return newsLetter(this);">
+                    <form onsubmit="return submitMail(this);">
                         <div class="form-group ">
                             <label for="firstname" class="col-sm-2">First name</label>
                             <div class="col-sm-10">
@@ -112,13 +112,13 @@
                         <div class=" form-group">
                             <label for="inputtext" class="col-sm-2">Message</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" id="inputtext"
+                                <textarea class="form-control" id="message"
                                     placeholder="Type your message here"></textarea>
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-sm-offset-2 col-sm-10">
-                                <button type="submit" class="btn btn-danger mb-2">Send</button>
+                            <div class="col-sm-offset-2 col-sm-10 btnOuter">
+                                <button type="submit" class="btn btn-danger btn-block ">Submit</button>
                             </div>
                         </div>
 
@@ -177,8 +177,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
-    <script src="assets/js/maps.js"></script>
-    <script src="assets/js/newsLetterRequest.js"></script>
+
+    <script src="assets/js/contact.js"></script>
 
 </body>
 

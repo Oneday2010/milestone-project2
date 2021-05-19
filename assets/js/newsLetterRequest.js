@@ -1,7 +1,7 @@
 function newsLetter(contactForm) {
     emailjs.send("service_fgx81ok", "newsletter", {
 
-            "from_email": contactForm.emailaddress.value,
+            "from_email": contactForm.emailaddress.value
 
         })
         .then(
