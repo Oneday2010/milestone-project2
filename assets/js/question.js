@@ -1,4 +1,4 @@
-var cafe = [
+var cafes = [
 
 
     //1
@@ -263,15 +263,15 @@ function suggest(index) {
         }
         var random = suggested[Math.floor(Math.random() * suggested.length)] - 1;
         document.getElementById("name").innerHTML =
-            "<strong></strong>" + restaurants[random].name;
+            "<strong></strong>" + cafes[random].name;
         document.getElementById("food").innerHTML =
-            "<i class='fas fa-utensils'></i>" + " " + restaurants[random].food;
+            "<i class='fas fa-utensils'></i>" + " " + cafes[random].food;
         document.getElementById("sits").innerHTML =
-            "<i class='far fa-clock'></i>" + " " + restaurants[random].sits;
+            "<i class='far fa-clock'></i>" + " " + cafes[random].sits;
         document.getElementById("address").innerHTML =
-            "<i class='fas fa-laptop'></i>" + " " + restaurants[random].address;
+            "<i class='fas fa-laptop'></i>" + " " + rcafes[random].address;
         document.getElementById("review").innerHTML =
-            "<i class='fas fa-map-marker-alt'></i>" + " " + restaurants[random].review;
+            "<i class='fas fa-map-marker-alt'></i>" + " " + cafes[random].review;
 
     }
 }
