@@ -45,7 +45,7 @@
 
         <!-- Modal -->
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
+            <div class="modal-dialog modal-lg" role="document">
 
                 <div class="modal-content">
                     <div class="modal-header">
@@ -59,8 +59,9 @@
 
                         <div class="modal-split text-center">
                             <h3>your favorit coffee type?</h3>
-                            <div class="cafe-questions row justify-content-between px-3 text-center selections">
-                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center cafe" data-suggest="food">
+                            <div class="radio-group row justify-content-between px-3 text-center selections">
+                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
+                                    data-suggest="americano">
                                     <div class="flex-row cards-list">
                                         <div class="col card 1">
                                             <div class="selectionPhoto card_image">
@@ -73,7 +74,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center cafe" data-suggest="food">
+                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
+                                    data-suggest="latte">
                                     <div class="flex-row cards-list">
                                         <div class="col card 1">
                                             <div class="selectionPhoto card_image">
@@ -86,7 +88,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center cafe" data-suggest="food">
+                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
+                                    data-suggest="cappuccino">
                                     <div class="flex-row cards-list">
                                         <div class="col card 1">
                                             <div class="selectionPhoto card_image">
@@ -99,7 +102,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center cafe" data-suggest="food">
+                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
+                                    data-suggest="moca">
                                     <div class="flex-row cards-list">
                                         <div class="col card 1">
                                             <div class="selectionPhoto card_image">
@@ -112,8 +116,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center cafe"
-                                    class="selectionPhoto_1" data-suggest="food">
+                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
+                                    class="selectionPhoto_1" data-suggest="espresso">
                                     <div class="flex-row cards-list">
                                         <div class="col card 1 ">
                                             <div class="selectionPhoto card_image">
@@ -131,7 +135,7 @@
                         <!-- Model page 2-->
                         <div class="modal-split text-center">
                             <h3>Food or just desert?</h3>
-                            <div class="cafe-questions row justify-content-between px-3 text-center selections">
+                            <div class="radio-group row justify-content-between px-3 text-center selections">
                                 <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center cafe" data-suggest="food">
                                     <div class="flex-row cards-list">
                                         <div class="col card 1">
@@ -145,7 +149,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center cafe" data-suggest="food">
+                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
+                                    data-suggest="dessert">
                                     <div class="flex-row cards-list">
                                         <div class="col card 1">
                                             <div class="selectionPhoto card_image">
@@ -160,22 +165,65 @@
                                 </div>
                             </div>
 
-
+                            <!-- Model page 3-->
 
                         </div>
-                        <div class="modal-split">
-                            3
+                        <div class="modal-split text-center">
+                            <h3>type of cafe?</h3>
+                            <div class="radio-group row justify-content-between px-3 text-center selections">
+                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
+                                    data-suggest="huge">
+                                    <div class="flex-row cards-list">
+                                        <div class="col card 1">
+                                            <div class="selectionPhoto card_image">
+                                                <img src="assets/images/questions/manysitscafe.jpg"
+                                                    class="selectionPhoto_1" alt="huge cafe">
+                                                <div class="card_title title-white">
+                                                    <p>many sits</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
+                                    data-suggest="small">
+                                    <div class="flex-row cards-list">
+                                        <div class="col card 1">
+                                            <div class="selectionPhoto card_image">
+                                                <img src="assets/images/questions/cozycafe.jpg" class="selectionPhoto_1"
+                                                    alt="cozy cafe">
+                                                <div class="card_title title-white">
+                                                    <p>small and cozy</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-
-                        <div class="modal-footer">
-                            <!--Nothing Goes Here but is needed! -->
+                        <!--Modal pgae 4 result-->
+                        <div class="model-split">
+                            <h3 id="name">Name</h3>
+                            <div class="row">
+                                <div class="text col-12 col-lg-6">
+                                    <p id="food">food</p>
+                                    <p id="sits">sits</p>
+                                    <p id="address">address</p>
+                                    <p id="review">review</p>
+                                </div>
+                            </div>
                         </div>
+
+                    </div>
+
+
+                    <div class="modal-footer">
+                        <!--Nothing Goes Here but is needed! -->
                     </div>
                 </div>
             </div>
         </div>
-
 
 
 

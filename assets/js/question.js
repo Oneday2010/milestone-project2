@@ -101,9 +101,33 @@ var cafe = [
     }
 ];
 
+var suuggestions = {
+    Americano: "1,4,6,8,10,11",
+    latte: "2,4,6,7,12",
+    cappuccino: "3,4,5,8,10,12",
+    moca: "6,7,8,10,11",
+    espresso: "2,3,4,6,9,12",
+    food: "4,5,6,7,8,11,12",
+    dessert: "1,2,3,9,10",
+    mnay_sits: "2,5,6,10,11",
+    cozy: "1,3,4,7,8,9,12",
 
+};
 
+// Array to temporary store the values (So the last selection can be deleted in case "BACK" is pressed)
+var selections = [];
 
+var inputs = [];
+var suggested = [];
+
+function containing(arr, key) {
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] == key) {
+            return true;
+        }
+    }
+    return false;
+}
 
 $(document).ready(function () {
     prep_modal();
@@ -111,9 +135,8 @@ $(document).ready(function () {
 
 function prep_modal() {
     $(".modal").each(function () {
-
         var element = this;
-        var pages = $(this).find('.modal-split');
+        var pages = $(this).find(".modal-split");
 
         if (pages.length != 0) {
             pages.hide();
@@ -121,34 +144,59 @@ function prep_modal() {
 
             var b_button = document.createElement("button");
             b_button.setAttribute("type", "button");
-            b_button.setAttribute("class", "btn btn-primary");
+            b_button.setAttribute("class", "btn btn-light");
             b_button.setAttribute("style", "display: none;");
             b_button.innerHTML = "Back";
 
             var n_button = document.createElement("button");
             n_button.setAttribute("type", "button");
-            n_button.setAttribute("class", "btn btn-primary");
+            n_button.setAttribute("class", "btn btn-light");
+            n_button.setAttribute("id", "nextBtn");
+            //Disable the NEXT button Until a selection is chose
+            n_button.disabled = true;
             n_button.innerHTML = "Next";
 
-            $(this).find('.modal-footer').append(b_button).append(n_button);
-
+            $(this).find(".modal-footer").append(b_button).append(n_button);
 
             var page_track = 0;
 
             $(n_button).click(function () {
-
                 this.blur();
+                //Disable the NEXT button until a selection is chose
+                n_button.disabled = true;
 
                 if (page_track == 0) {
                     $(b_button).show();
                 }
 
+                if (page_track <= pages.length - 2) {
+                    //Push the selection in the Temporal Array (See HTML attribute "DATA-SUGGEST" on each selection)
+                    selections.push($(".selected").attr("data-suggest"));
+                    //Remove the selected class on every selection
+                    $(".radio").removeClass("selected");
+                }
+
                 if (page_track == pages.length - 2) {
-                    $(n_button).text("Submit");
+                    //When all three selections chose, loop through the temporal array to return a Suggestion
+
+                    $(n_button).text("Finish");
+                    n_button.disabled = false;
                 }
 
                 if (page_track == pages.length - 1) {
-                    $(element).find("form").submit();
+                    page_track = -1;
+                    $(n_button).text("Next");
+                    $(b_button).hide();
+                    $("#myModal").modal("hide");
+                    document.getElementById("food").innerHTML = "";
+                    document.getElementById("sits").innerHTML = "";
+                    document.getElementById("address").innerHTML = "";
+                    document.getElementById("review").innerHTML = "";
+
+                    //Empty the global arrays when FINISH is pressed
+                    inputs = [];
+                    suggested = [];
+                    selections = [];
                 }
 
                 if (page_track < pages.length - 1) {
@@ -157,12 +205,16 @@ function prep_modal() {
                     pages.hide();
                     pages.eq(page_track).show();
                 }
-
-
             });
 
             $(b_button).click(function () {
-
+                //Empty the final arrays when BACK is pressed
+                inputs = [];
+                suggested = [];
+                //Remove the last element in the temporal array
+                selections.pop();
+                //Disable the NEXT button everytime BACK is pressed
+                n_button.disabled = true;
                 if (page_track == 1) {
                     $(b_button).hide();
                 }
@@ -177,11 +229,49 @@ function prep_modal() {
                     pages.hide();
                     pages.eq(page_track).show();
                 }
-
-
             });
-
         }
-
     });
+}
+
+$(document).ready(function () {
+    $(".radio-group .radio").click(function () {
+        $(".selected .fa").removeClass("fa-check");
+        $(".radio").removeClass("selected");
+        $(this).addClass("selected");
+        //Remove the disabled attribute of the NEXT button upon selection
+        $("#nextBtn").prop("disabled", false);
+    });
+});
+
+function suggest(index) {
+    let numbers = suggestions[index].split(",");
+    for (let i = 0; i < numbers.length; i++) {
+        inputs.push(Number(numbers[i]));
+    }
+    if (index == "Low" || index == "Medium" || index == "High") {
+        for (let i = 0; i < inputs.length; i++) {
+            let count = 0;
+            for (let j = 0; j < inputs.length; j++) {
+                if (inputs[i] == inputs[j]) {
+                    count++;
+                }
+            }
+            if (count == 3 && containing(suggested, inputs[i]) == false) {
+                suggested.push(inputs[i]);
+            }
+        }
+        var random = suggested[Math.floor(Math.random() * suggested.length)] - 1;
+        document.getElementById("name").innerHTML =
+            "<strong></strong>" + restaurants[random].name;
+        document.getElementById("food").innerHTML =
+            "<i class='fas fa-utensils'></i>" + " " + restaurants[random].food;
+        document.getElementById("sits").innerHTML =
+            "<i class='far fa-clock'></i>" + " " + restaurants[random].sits;
+        document.getElementById("address").innerHTML =
+            "<i class='fas fa-laptop'></i>" + " " + restaurants[random].address;
+        document.getElementById("review").innerHTML =
+            "<i class='fas fa-map-marker-alt'></i>" + " " + restaurants[random].review;
+
+    }
 }
