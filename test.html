@@ -1,145 +1,33 @@
- <section>
-        <div class="main-btn">
-            <div class="card 1" data-toggle="modal" data-target="#myModal">
-                <div class="card_image"> </div>
-                <div class="main-btn-title">
-                    <i class="fas fa-heart"></i>
-                    <i class="fas fa-utensils"></i>
-                </div>
-            </div>
-        </div>
-        <!-- Modal -->
-        <!-- CREDIT for modal: https://codepen.io/Ayn_/pen/vmVKZV -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Modal page 1 -->
-                        <div class="modal-split">
-                            <h3>Pick your cuisine!</h3>
-                            <div class="radio-group row justify-content-between px-3 text-center a">
-                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="Japanese">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid"
-                                                    src="assets/img/japan-cuisine.png" alt="Japanese food" width="150"
-                                                    height="150"> </div>
-                                            <p>Japanese</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="NonJapanese">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid"
-                                                    src="assets/img/non-japan-cuisine.png" alt="Non-japanese food"
-                                                    width="150" height="150">
-                                            </div>
-                                            <p>Non-Japanese</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal page 2 -->
-                        <div class="modal-split">
-                            <h3>Are you a...?</h3>
-                            <div class="radio-group row justify-content-between px-3 text-center a">
-                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="Meat">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid"
-                                                    src="assets/img/meat-eater.png" alt="Meat-eater" width="150"
-                                                    height="150"> </div>
-                                            <p>Meat-eater</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="Vegetarian">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid"
-                                                    src="assets/img/vegetarian.png" alt="Vegetarian" width="150"
-                                                    height="150"> </div>
-                                            <p>Vegetarian</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="Vegan">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid" src="assets/img/vegan.png"
-                                                    alt="Vegan" width="150" height="150"> </div>
-                                            <p>Vegan</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal page 3 -->
-                        <div class="modal-split">
-                            <h3>What is your budget?</h3>
-                            <div class="radio-group row justify-content-between px-3 text-center a">
-                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio" data-suggest="Low">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid" src="assets/img/yen-1.png"
-                                                    alt="low budget" width="150" height="150"> </div>
-                                            <p>Low</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="Medium">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid" src="assets/img/yen-2.png"
-                                                    alt="medium budget" width="150" height="150"> </div>
-                                            <p>Medium</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="High">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid" src="assets/img/yen-3.png"
-                                                    alt="high budget" width="150" height="150"> </div>
-                                            <p>High</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Modal page 4 result-->
-                        <div class="modal-split">
-                            <h3 id="name">Name</h3>
-                            <div class="row">
-                                <div class="text col-12 col-lg-6">
-                                    <p id="cuisine">Cuisine</p>
-                                    <p id="hours">Hours</p>
-                                    <p id="website">Website</p>
-                                    <p id="address">Address</p>
-                                </div>
-                                <div class="col-12 col-lg-6" id="map"></div>
-                            </div>
-                        </div>
+<!DOCTYPE html>
+<html lang="en">
 
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="assets/css/test.css">
+</head>
 
-                    <div class="modal-footer">
-                        <!--Nothing Goes Here but is needed! -->
-                    </div>
-                </div>
+<body>
+    <div id="container">
+        <div id="start">Start Quiz!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
             </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
         </div>
-    </section>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="assets/js/test.js"></script>
+</body>
+
+</html>
