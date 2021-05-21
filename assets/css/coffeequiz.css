@@ -1,14 +1,26 @@
-    body {
-        font-size: 20px;
-        font-family: monospace;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+    :root {
+        --fontFamily: 'Inter', sans-serif;
+        --bagImgColor: linear-gradient(113.97246213018036deg, rgba(243, 243, 243, 1) 12.97582304526749%, rgba(255, 249, 237, 1) 45.09369488536155%, rgba(255, 228, 196, 1) 87.00360082304526%);
     }
 
+    body,
+    html {
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+        background-repeat: no-repeat;
+        background-image: var(--bagImgColor);
+    }
+
+
     #container {
-        margin: 20px auto;
+        margin: 100px auto;
         background-color: white;
-        height: 300px;
+        height: 400px;
         width: 700px;
-        border-radius: 5px;
+        border-radius: 25px;
         box-shadow: 0px 5px 15px 0px;
         position: relative;
     }
@@ -132,12 +144,12 @@
     }
 
     #scoreContainer {
-        margin: 20px auto;
+        margin: 70px auto;
         background-color: white;
-        opacity: 0.95;
-        height: 300px;
-        width: 700px;
-        border-radius: 5px;
+        opacity: 1;
+        height: 350px;
+        width: 500px;
+        border-radius: 25px;
         box-shadow: 0px 5px 15px 0px;
         position: relative;
         display: none;
@@ -164,10 +176,10 @@
     #scoreContainer p {
         position: absolute;
         display: block;
-        width: 59px;
-        height: 59px;
-        top: 120px;
-        left: 325px;
+        width: 200;
+        height: 200;
+        top: 150px;
+        left: 250px;
         font-weight: 300;
 
     }

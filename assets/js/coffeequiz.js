@@ -159,11 +159,11 @@ function scoreRender() {
         (scorePerCent >= 20) ? "assets/images/coffeequiz/coffeeface-2.jpg" :
         "assets/images/coffeequiz/coffeeface-1.jpg";
 
-    let message = (scorePerCent >= 80) ? "Great job!" :
-        (scorePerCent >= 60) ? "Better luck next time." :
-        (scorePerCent >= 40) ? "Maybe you should try a little harder." :
+    let message = (scorePerCent >= 80) ? "Well done!! Great job" :
+        (scorePerCent >= 60) ? "Almost perfect!! keep it up" :
+        (scorePerCent >= 40) ? "You did alright" :
         (scorePerCent >= 20) ? "Maybe you should try a little harder." :
-        "You did alright.";
+        "Not great, You can do better";
 
 
     scoreDiv.innerHTML = "<img src=" + img + ">";
