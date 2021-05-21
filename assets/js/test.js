@@ -40,7 +40,22 @@ let questions = [{
         choiceB: "Ethiopia",
         choiceC: "England",
         correct: "B"
+    }, {
+        question: "In what country is coffee believed to have originated??",
+        imgSrc: "assets/images/questions/latte.png",
+        choiceA: "Arabia",
+        choiceB: "Ethiopia",
+        choiceC: "England",
+        correct: "B"
+    }, {
+        question: "In what country is coffee believed to have originated??",
+        imgSrc: "assets/images/questions/americano.png",
+        choiceA: "Arabia",
+        choiceB: "Ethiopia",
+        choiceC: "England",
+        correct: "B"
     },
+
 ];
 
 // create some variables
@@ -148,7 +163,7 @@ function scoreRender() {
     const scorePerCent = Math.round(100 * score / questions.length);
 
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "img/5.png" :
+    let img = (scorePerCent >= 80) ? "assets/images/test/5.png" :
         (scorePerCent >= 60) ? "assets/images/test/4.png" :
         (scorePerCent >= 40) ? "assets/images/test/3.png" :
         (scorePerCent >= 20) ? "assets/images/test/2.png" :
