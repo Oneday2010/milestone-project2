@@ -137,7 +137,7 @@ function checkAnswer(answer) {
 
 // answer is correct
 function answerIsCorrect() {
-    document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
+    document.getElementById(runningQuestion).style.backgroundColor = "#df8812";
 }
 
 // answer is Wrong
@@ -153,12 +153,21 @@ function scoreRender() {
     const scorePerCent = Math.round(100 * score / questions.length);
 
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "assets/images/coffeequiz/5.png" :
-        (scorePerCent >= 60) ? "assets/images/coffeequiz/4.png" :
-        (scorePerCent >= 40) ? "assets/images/coffeequiz/3.png" :
-        (scorePerCent >= 20) ? "assets/images/coffeequiz/2.png" :
-        "assets/images/coffeequiz/1.png";
+    let img = (scorePerCent >= 80) ? "assets/images/coffeequiz/coffeeface-5.jpg" :
+        (scorePerCent >= 60) ? "assets/images/coffeequiz/coffeeface-4.jpg" :
+        (scorePerCent >= 40) ? "assets/images/coffeequiz/coffeeface-3.jpg" :
+        (scorePerCent >= 20) ? "assets/images/coffeequiz/coffeeface-2.jpg" :
+        "assets/images/coffeequiz/coffeeface-1.jpg";
+
+    let message = (scorePerCent >= 80) ? "Great job!" :
+        (scorePerCent >= 60) ? "Better luck next time." :
+        (scorePerCent >= 40) ? "Maybe you should try a little harder." :
+        (scorePerCent >= 20) ? "Maybe you should try a little harder." :
+        "You did alright.";
+
 
     scoreDiv.innerHTML = "<img src=" + img + ">";
-    scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
+    scoreDiv.innerHTML += "<h4>" + scorePerCent + "%</h4>";
+    scoreDiv.innerHTML += "<p>" + message + "</p>";
+
 }
