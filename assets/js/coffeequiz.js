@@ -16,44 +16,34 @@ const scoreDiv = document.getElementById("scoreContainer");
 
 // create our questions
 let questions = [{
-        question: "Where did the word 'frappuccino'originate?",
-        imgSrc: "assets/images/questions/moca.png",
-        choiceA: "Italy",
-        choiceB: "Massachusetts",
-        choiceC: "Ethiopia",
-        correct: "B"
-    },
-    {
-
-
-        question: "what is an espresso?",
+        question: "The meaning of the term “espresso” is…",
         imgSrc: "assets/images/questions/espresso.png",
-        choiceA: "A brewing method where water is forced through the coffee grounds.",
-        choiceB: "A type of coffee bean that contains high amounts of caffeine.",
-        choiceC: "A type of beverage made with steamed milk.",
+        choiceA: "Forced out",
+        choiceB: "Expressive",
+        choiceC: "Under pressure",
         correct: "A"
+    }, {
+        question: "Adding milk to coffee…?",
+        imgSrc: "assets/images/coffeequiz/latte.png",
+        choiceA: "Slows the digestive processes",
+        choiceB: "Mitigates the effect of caffeine ",
+        choiceC: "Both",
+        correct: "C"
+    }, {
+        question: "Dark roasted coffee beans have…?",
+        imgSrc: "assets/images/coffeequiz/americano.png",
+        choiceA: "Richer flavor",
+        choiceB: "Less caffeine",
+        choiceC: "Both",
+        correct: "C"
     },
     {
-        question: "In what country is coffee believed to have originated??",
-        imgSrc: "assets/images/questions/espresso.png",
-        choiceA: "Arabia",
-        choiceB: "Ethiopia",
-        choiceC: "England",
-        correct: "B"
-    }, {
-        question: "In what country is coffee believed to have originated??",
-        imgSrc: "assets/images/questions/latte.png",
-        choiceA: "Arabia",
-        choiceB: "Ethiopia",
-        choiceC: "England",
-        correct: "B"
-    }, {
-        question: "In what country is coffee believed to have originated??",
-        imgSrc: "assets/images/questions/americano.png",
-        choiceA: "Arabia",
-        choiceB: "Ethiopia",
-        choiceC: "England",
-        correct: "B"
+        question: "Which ingredient is NOT found in a cappuccino??",
+        imgSrc: "assets/images/coffeequiz/cappuccino.png",
+        choiceA: "Steamed milk",
+        choiceB: "Espresso",
+        choiceC: "Whipped cream",
+        correct: "C"
     },
 
 ];
@@ -163,11 +153,11 @@ function scoreRender() {
     const scorePerCent = Math.round(100 * score / questions.length);
 
     // choose the image based on the scorePerCent
-    let img = (scorePerCent >= 80) ? "assets/images/test/5.png" :
-        (scorePerCent >= 60) ? "assets/images/test/4.png" :
-        (scorePerCent >= 40) ? "assets/images/test/3.png" :
-        (scorePerCent >= 20) ? "assets/images/test/2.png" :
-        "assets/images/test/1.png";
+    let img = (scorePerCent >= 80) ? "assets/images/coffeequiz/5.png" :
+        (scorePerCent >= 60) ? "assets/images/coffeequiz/4.png" :
+        (scorePerCent >= 40) ? "assets/images/coffeequiz/3.png" :
+        (scorePerCent >= 20) ? "assets/images/coffeequiz/2.png" :
+        "assets/images/coffeequiz/1.png";
 
     scoreDiv.innerHTML = "<img src=" + img + ">";
     scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
