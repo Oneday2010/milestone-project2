@@ -13,29 +13,35 @@ const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
+
 // create our questions
 let questions = [{
-    question: "What does HTML stand for?",
-    imgSrc: "asssets/images/test/html.png",
-    choiceA: "Correct",
-    choiceB: "Wrong",
-    choiceC: "Wrong",
-    correct: "A"
-}, {
-    question: "What does CSS stand for?",
-    imgSrc: "asssets/images/test/css.png",
-    choiceA: "Wrong",
-    choiceB: "Correct",
-    choiceC: "Wrong",
-    correct: "B"
-}, {
-    question: "What does JS stand for?",
-    imgSrc: "asssets/images/test/js.png",
-    choiceA: "Wrong",
-    choiceB: "Wrong",
-    choiceC: "Correct",
-    correct: "C"
-}];
+        question: "Where did the word 'frappuccino'originate?",
+        imgSrc: "assets/images/questions/moca.png",
+        choiceA: "Italy",
+        choiceB: "Massachusetts",
+        choiceC: "Ethiopia",
+        correct: "B"
+    },
+    {
+
+
+        question: "what is an espresso?",
+        imgSrc: "assets/images/questions/espresso.png",
+        choiceA: "A brewing method where water is forced through the coffee grounds.",
+        choiceB: "A type of coffee bean that contains high amounts of caffeine.",
+        choiceC: "A type of beverage made with steamed milk.",
+        correct: "A"
+    },
+    {
+        question: "In what country is coffee believed to have originated??",
+        imgSrc: "assets/images/questions/espresso.png",
+        choiceA: "Arabia",
+        choiceB: "Ethiopia",
+        choiceC: "England",
+        correct: "B"
+    },
+];
 
 // create some variables
 
@@ -143,10 +149,10 @@ function scoreRender() {
 
     // choose the image based on the scorePerCent
     let img = (scorePerCent >= 80) ? "img/5.png" :
-        (scorePerCent >= 60) ? "asssets/images/test/4.png" :
-        (scorePerCent >= 40) ? "asssets/images/test/3.png" :
-        (scorePerCent >= 20) ? "asssets/images/test/2.png" :
-        "asssets/images/test/1.png";
+        (scorePerCent >= 60) ? "assets/images/test/4.png" :
+        (scorePerCent >= 40) ? "assets/images/test/3.png" :
+        (scorePerCent >= 20) ? "assets/images/test/2.png" :
+        "assets/images/test/1.png";
 
     scoreDiv.innerHTML = "<img src=" + img + ">";
     scoreDiv.innerHTML += "<p>" + scorePerCent + "%</p>";
