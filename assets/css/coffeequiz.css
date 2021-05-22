@@ -208,3 +208,17 @@
         font-weight: 500;
         font-family: var(--fontFamily);
     }
+
+    #scoreContainer a {
+        
+        position: absolute;
+        display: block;
+        width: 200;
+        height: 200;
+        top: 200px;
+        left: 300px;
+        font-weight: 500;
+        font-family: var(--fontFamily);
+    }
+
+    

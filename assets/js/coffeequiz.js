@@ -158,12 +158,13 @@ function scoreRender() {
         (scorePerCent >= 40) ? "assets/images/coffeequiz/coffeeface-3.jpg" :
         (scorePerCent >= 20) ? "assets/images/coffeequiz/coffeeface-2.jpg" :
         "assets/images/coffeequiz/coffeeface-1.jpg";
-
-    let message = (scorePerCent >= 80) ? "Well done!! Great job!" :
-        (scorePerCent >= 60) ? "Almost perfect!! keep it up!" :
+    let txt = "back home";
+    let message = (scorePerCent >= 80) ? "Well done!! Great job!" + txt.link("https://oneday2010.github.io/milestone-project2/") :
+        (scorePerCent >= 60) ? "Almost perfect!! keep it up!<a href = 'https://oneday2010.github.io/milestone-project2/' target ='_blank' > Back hoome </a>" :
         (scorePerCent >= 40) ? "You did alright!" :
-        (scorePerCent >= 20) ? "Maybe you should try a little harder." :
-        "Not great, try one more time!!";
+        (scorePerCent >= 20) ? "Maybe you should try a little harder.<a href = 'https://oneday2010.github.io/milestone-project2/' target ='_blank' > Back hoome </a>" :
+        "Not great, try one more time!!<a href = 'https://oneday2010.github.io/milestone-project2/' target ='_blank' > Back hoome </a>";
+
 
 
     scoreDiv.innerHTML = "<img src=" + img + ">";
