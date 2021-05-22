@@ -41,7 +41,7 @@
         left: 200px;
         color: #ef6033;
         font-family: var(--fontFamily);
-        background-color:#fff;
+        background-color: #fff;
     }
 
     #start h3 {
@@ -208,17 +208,3 @@
         font-weight: 500;
         font-family: var(--fontFamily);
     }
-
-    #scoreContainer a {
-        
-        position: absolute;
-        display: block;
-        width: 200;
-        height: 200;
-        top: 200px;
-        left: 300px;
-        font-weight: 500;
-        font-family: var(--fontFamily);
-    }
-
-    

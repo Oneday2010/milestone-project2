@@ -4,12 +4,24 @@
     --fontFamily: 'Inter', sans-serif;
     --bagImgColor: linear-gradient(113.97246213018036deg, rgba(243, 243, 243, 1) 12.97582304526749%, rgba(255, 249, 237, 1) 45.09369488536155%, rgba(255, 228, 196, 1) 87.00360082304526%);
 }
-body, html {
+
+html {
+
+    height: auto;
+    min-height: 100vh;
+
+}
+
+body {
     width: 100%;
     height: 100%;
+    background-image: var(--bagImgColor);
+    background-position: center;
     background-repeat: no-repeat;
-   background-image: var(--bagImgColor);
+    background-size: cover;
+
 }
+
 /*--------------------------------------------heading*/
 /*----------------------------nav*/
 
@@ -27,6 +39,7 @@ body, html {
     font-weight: 500;
 
 }
+
 .logoImg {
     width: 35%;
     height: 35%;
@@ -36,36 +49,41 @@ body, html {
 /*----------------------------form*/
 .cardImageText {
     margin-top: 30px;
-    
+
 }
+
 .card {
     border: none;
 
 }
+
 .card-body {
     margin-top: 20px;
     padding: 10px;
     text-align: center;
-    
-   
+
+
 }
+
 h5 {
     font-size: 15px;
 
 }
 
 img {
-    width:50%;
+    width: 50%;
     height: 50%;
-     border-radius: 80px;
+    border-radius: 80px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
+
 .formContainer {
     margin-top: 50px;
     padding: 0;
     position: relative;
-  
+
 }
+
 .contactFormOuter {
     padding-left: 20%;
 
@@ -80,6 +98,7 @@ img {
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
+
 .contactText {
     background-color: rgb(241, 236, 191);
     margin: 0;

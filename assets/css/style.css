@@ -6,11 +6,19 @@
 }
 
 
+html {
+    height: auto;
+
+}
+
 body {
     width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
+    height: 200%;
     background-image: var(--bagImgColor);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 /*--------------------------------------------heading*/
@@ -39,29 +47,45 @@ body {
 
 /*--------------------------------------------section*/
 /*----------------------------main slideshow*/
-.carousel-item {
-    height: 100vh;
-
+.carouser {
+    margin-bottom: -50rem;
 }
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+
 
 .carousel-caption {
     position: absolute;
-    top: 38%;
-    text-transform: uppercase;
+    top: 60%;
+    transform: translateY(-50%);
+
     font-family: var(--fontFamily);
 }
 
 .carousel-caption h1 {
-    font-size: 3.8rem;
+    font-size: 250%;
     font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
     letter-spacing: .3rem;
     padding-bottom: 1rem;
+    font-family: var(--fontFamily);
+
 }
 
-.carousel-caption h3 h5 {
-    font-size: 2rem;
-    padding-bottom: 1rem;
-
+.carousel-caption h3 {
+    font-size: 180%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+    letter-spacing: .3rem;
+    padding-bottom: 2rem;
+    font-family: var(--fontFamily);
 }
 
 
