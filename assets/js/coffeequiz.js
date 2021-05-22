@@ -98,7 +98,7 @@ function renderCounter() {
         count++
     } else {
         count = 0;
-        // change progress color to red
+        // change progress color to orange
         answerIsWrong();
         if (runningQuestion < lastQuestion) {
             runningQuestion++;
@@ -117,11 +117,11 @@ function checkAnswer(answer) {
     if (answer == questions[runningQuestion].correct) {
         // answer is correct
         score++;
-        // change progress color to green
+        // change progress color to light green
         answerIsCorrect();
     } else {
         // answer is wrong
-        // change progress color to red
+        // change progress color to orange
         answerIsWrong();
     }
     count = 0;
@@ -137,12 +137,12 @@ function checkAnswer(answer) {
 
 // answer is correct
 function answerIsCorrect() {
-    document.getElementById(runningQuestion).style.backgroundColor = "#df8812";
+    document.getElementById(runningQuestion).style.backgroundColor = "#d2eb77";
 }
 
 // answer is Wrong
 function answerIsWrong() {
-    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
+    document.getElementById(runningQuestion).style.backgroundColor = "#ff7551";
 }
 
 // score render
@@ -159,11 +159,11 @@ function scoreRender() {
         (scorePerCent >= 20) ? "assets/images/coffeequiz/coffeeface-2.jpg" :
         "assets/images/coffeequiz/coffeeface-1.jpg";
 
-    let message = (scorePerCent >= 80) ? "Well done!! Great job" :
-        (scorePerCent >= 60) ? "Almost perfect!! keep it up" :
-        (scorePerCent >= 40) ? "You did alright" :
+    let message = (scorePerCent >= 80) ? "Well done!! Great job!" :
+        (scorePerCent >= 60) ? "Almost perfect!! keep it up!" :
+        (scorePerCent >= 40) ? "You did alright!" :
         (scorePerCent >= 20) ? "Maybe you should try a little harder." :
-        "Not great, You can do better";
+        "Not great, try one more time!!";
 
 
     scoreDiv.innerHTML = "<img src=" + img + ">";
