@@ -1,9 +1,10 @@
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
 
-    :root {
-        --fontFamily: 'Inter', sans-serif;
-        --bagImgColor: linear-gradient(113.97246213018036deg, rgba(243, 243, 243, 1) 12.97582304526749%, rgba(255, 249, 237, 1) 45.09369488536155%, rgba(255, 228, 196, 1) 87.00360082304526%);
-    }
+   :root {
+    --fontFamily: 'Inter', sans-serif;
+    --bagImgColor: #FFF8E6;
+}
+
 
     body,
     html {

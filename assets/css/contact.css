@@ -2,8 +2,9 @@
 
 :root {
     --fontFamily: 'Inter', sans-serif;
-    --bagImgColor: linear-gradient(113.97246213018036deg, rgba(243, 243, 243, 1) 12.97582304526749%, rgba(255, 249, 237, 1) 45.09369488536155%, rgba(255, 228, 196, 1) 87.00360082304526%);
+    --bagImgColor: #FFEECB;
 }
+
 
 html {
 
@@ -15,7 +16,7 @@ html {
 body {
     width: 100%;
     height: 100%;
-    background-image: var(--bagImgColor);
+    background-color: var(--bagImgColor);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +25,8 @@ body {
 
 /*--------------------------------------------heading*/
 /*----------------------------nav*/
-
+.navbar-dark { background-color:#362E24;
+}
 .nav-container {
 
     margin: 0px;
@@ -108,12 +110,12 @@ img {
 .footer-outer {
 
     padding: 25px 25px 10px;
-    background-color: rgb(252, 242, 231);
+   
 }
 
 
 .footerText {
-    color: #ef6033;
+    color: #dc3444;
     text-transform: uppercase;
     font-weight: 600;
     font-family: var(--fontFamily);
@@ -142,7 +144,7 @@ img {
     line-height: 5px;
     text-align: center;
     color: #fff;
-    background: #ef6033;
+    background: #dc3444;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;

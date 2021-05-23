@@ -2,7 +2,7 @@
 
 :root {
     --fontFamily: 'Inter', sans-serif;
-    --bagImgColor: linear-gradient(113.97246213018036deg, rgba(243, 243, 243, 1) 12.97582304526749%, rgba(255, 249, 237, 1) 45.09369488536155%, rgba(255, 228, 196, 1) 87.00360082304526%);
+    --bagImgColor: #FFEECB;
 }
 
 
@@ -14,7 +14,7 @@ html {
 body {
     width: 100%;
     height: 200%;
-    background-image: var(--bagImgColor);
+    background-color: var(--bagImgColor);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,6 +31,9 @@ body {
     font-family: 'Inter', sans-serif;
 
 
+}
+
+.navbar-dark { background-color:#362E24;
 }
 
 .nav-text {
@@ -188,13 +191,16 @@ button[type="submit"] {
 }
 
 /*----------------------------footer*/
+/*----------------------------footer*/
 .footer-outer {
-    background-color: rgb(252, 242, 231);
+
     padding: 25px 25px 10px;
+   
 }
 
+
 .footerText {
-    color: #ef6033;
+    color: #dc3444;
     text-transform: uppercase;
     font-weight: 600;
     font-family: var(--fontFamily);
@@ -223,7 +229,7 @@ button[type="submit"] {
     line-height: 5px;
     text-align: center;
     color: #fff;
-    background: #ef6033;
+    background: #dc3444;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -234,13 +240,13 @@ button[type="submit"] {
     background: #f7a043;
 }
 
-
 /*--Media Queries--*/
 
 @media only screen and(max-width: 992px) {}
 
 
 @media only screen and (max-width: 992px) {
+
     /*--carousel--*/
     .carousel-caption {
         position: absolute;
@@ -279,10 +285,11 @@ button[type="submit"] {
         padding: 8px;
         font-weight: 500;
     }
-/*--hometwoimage--*/
-.card-body h2{
-    font-size: 25px;
-}
+
+    /*--hometwoimage--*/
+    .card-body h2 {
+        font-size: 25px;
+    }
 }
 
 @media only screen and(max-width: 576px) {
@@ -323,14 +330,15 @@ button[type="submit"] {
         padding: 0px;
         font-weight: 500;
     }
-    /*--hometwoimage--*/
-.card-body h2{
-    font-size: 22px;
-}
 
-.newsletterInfo h3 {
-    font-size: 18px;
-}
+    /*--hometwoimage--*/
+    .card-body h2 {
+        font-size: 22px;
+    }
+
+    .newsletterInfo h3 {
+        font-size: 18px;
+    }
 
 }
 
