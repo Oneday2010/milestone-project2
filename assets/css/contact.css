@@ -121,8 +121,10 @@ img {
     font-family: var(--fontFamily);
 }
 
-.list-inline-item:not(:last-child) {
-    margin: 0px 20px 0px 20px;
+.list-inline-item {
+    display: inline-block;
+    justify-content: space-around;
+    margin: 0px 10px 0px 30px;
 }
 
 

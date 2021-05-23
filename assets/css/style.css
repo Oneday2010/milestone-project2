@@ -32,19 +32,23 @@ body {
 
 }
 
-.navbar-dark { background-color:#362E24;
+.navbar-dark {
+    background-color: #362E24;
+    height: 70x;
 }
 
 .nav-text {
     font-family: var(--fontFamily);
     font-weight: 500;
+    font-size: 20px;
 
 
 }
 
 .logoImg {
-    width: 35%;
-    height: 35%;
+    width: 25%;
+    height: 25%;
+    margin: 10px;
 }
 
 /*--------------------------------------------section*/
@@ -54,6 +58,7 @@ body {
 }
 
 .carousel-inner img {
+    margin-top: 80px;
     width: 100%;
     height: 100%;
     opacity: 0.9;
@@ -63,7 +68,7 @@ body {
 
 .carousel-caption {
     position: absolute;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
 
     font-family: var(--fontFamily);
@@ -194,7 +199,7 @@ button[type="submit"] {
 .footer-outer {
 
     padding: 25px 25px 10px;
-   background-color: var(--bagImgColor);
+    background-color: var(--bagImgColor);
 }
 
 
@@ -205,10 +210,11 @@ button[type="submit"] {
     font-family: var(--fontFamily);
 }
 
-.list-inline-item:not(:last-child) {
-    margin: 0px 20px 0px 20px;
+.list-inline-item {
+    display: inline-block;
+    justify-content: space-around;
+    margin: 0px 10px 0px 30px;
 }
-
 
 .aboutLink .footerText:hover {
     color: #f7a043;
@@ -239,12 +245,12 @@ button[type="submit"] {
     background: #f7a043;
 }
 
-/*--Media Queries--*/
-
+/*------------------------------------------------------------------------Media Queries--*/
+/*-------------------------------------Media Queries for 992px--*/
 @media only screen and(max-width: 992px) {}
 
-
-@media only screen and (max-width: 992px) {
+/*-------------------------------------Media Queries for 769px--*/
+@media only screen and (max-width: 768px) {
 
     /*--carousel--*/
     .carousel-caption {
@@ -280,7 +286,7 @@ button[type="submit"] {
 
 
     .carousel-caption .btn {
-        font-size: 80%;
+        font-size: 95%;
         padding: 8px;
         font-weight: 500;
     }
@@ -289,45 +295,129 @@ button[type="submit"] {
     .card-body h2 {
         font-size: 25px;
     }
+
+    .my-col {
+        margin: 30px 20px 30px 20px;
+    }
+
+
+    /*----------------------------news letter*/
+    .newsletterContainer {
+        border: 2px solid rgb(255, 250, 239);
+        border-radius: 15px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+        margin: 30px 15% 30px 15%;
+        background-color: #fff;
+    }
+
+    .newsletterInfo {
+        text-align: center;
+        margin: 10px 10px;
+        font-family: var(--fontFamily);
+        font-size: 80%;
+    }
+
+    .newsletterInfo h3 {
+
+        font-size: 24px;
+    }
+
+    .newsletterInfo h5 {
+
+        font-size: 18px;
+    }
+
+
+    .center-form {
+        padding-top: 20px;
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+    button[type="submit"] {
+        margin: 15px 45% 30px 45%;
+    }
+
+    .col #b-outer {
+        margin-top: 0px;
+        font-size: 15px;
+    }
 }
 
-@media only screen and(max-width: 576px) {
+/*-------------------------------------Media Queries for 576px--*/
+@media(max-width: 576px) {
 
+    /* nav */
+    .navbar-dark {
+        background-color: #362E24;
+        height: 60px;
+    }
+
+    .nav-text {
+        font-family: var(--fontFamily);
+        font-weight: 400;
+        font-size: 15px;
+
+
+    }
+
+    .logoImg {
+        width: 22%;
+        height: 22%;
+        margin: 5px;
+    }
+
+    /* carousel */
+    .carousel {
+        margin-top: -7%;
+    }
 
     .carousel-caption {
         position: absolute;
-        top: 20%;
+        top: 50%;
         transform: translateY(-50%);
+
         font-family: var(--fontFamily);
     }
 
+
+
+
     .carousel-caption h1 {
-        font-size: 50%;
+        font-size: 120%;
         font-weight: 400;
         text-transform: uppercase;
         text-shadow: 1px 1px 15px #000;
         letter-spacing: .2rem;
-
+        padding-top: 2rem;
+        padding-bottom: 1rem;
         font-family: var(--fontFamily);
 
     }
 
     .carousel-caption h3 {
-        font-size: 50%;
+        font-size: 90%;
         font-weight: 400;
         text-transform: uppercase;
         text-shadow: 1px 1px 15px #000;
         letter-spacing: .2rem;
-
+        padding-top: -4rem;
+        padding-bottom: 5px;
         font-family: var(--fontFamily);
     }
 
+    .carousel-indicators {
+
+        display: none;
+    }
+
+
     .carousel-caption .btn {
-        width: 50%;
-        height: 60%;
-        font-size: 80%;
-        padding: 0px;
-        font-weight: 500;
+        height: 40%;
+        font-size: 70%;
+        margin-bottom: 10px;
+
+        font-weight: 400;
     }
 
     /*--hometwoimage--*/
@@ -335,48 +425,146 @@ button[type="submit"] {
         font-size: 22px;
     }
 
+    /* map */
+    .list-group-item {
+        font-size: 15px;
+    }
+
+    /* newsletter */
+
     .newsletterInfo h3 {
-        font-size: 18px;
+        font-size: 22px;
     }
 
-}
-
-
-@media only screen and(min-width: 576px) {
-    .carousel-caption {
-        position: absolute;
-        top: 20%;
-        transform: translateY(-50%);
-        font-family: var(--fontFamily);
-    }
-
-    .carousel-caption h1 {
-        font-size: 50%;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 15px #000;
-        letter-spacing: .2rem;
-
-        font-family: var(--fontFamily);
+    .newsletterInfo h5 {
+        font-size: 15px;
 
     }
 
-    .carousel-caption h3 {
-        font-size: 50%;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 15px #000;
-        letter-spacing: .2rem;
-
-        font-family: var(--fontFamily);
+    .newsletterContainer {
+        margin: 30px 10% 30px 10%;
     }
 
-    .carousel-caption .btn {
-        width: 50%;
-        height: 60%;
-        font-size: 80%;
-        padding: 0px;
-        font-weight: 500;
+    button[type="submit"] {
+        margin: 15px 45% 30px 35%;
+
     }
 
-}
+    /* footer */
+     .pull-right {
+            margin-right: 40px;
+        }
+    }
+        
+
+    @media(min-width: 576px) {
+
+
+        /* nav */
+        .navbar-dark {
+            background-color: #362E24;
+            height: 60px;
+        }
+
+        .nav-text {
+            font-family: var(--fontFamily);
+            font-weight: 400;
+            font-size: 15px;
+
+
+        }
+
+        .logoImg {
+            width: 22%;
+            height: 22%;
+            margin: 5px;
+        }
+
+        /* carousel */
+        .carousel {
+            margin-top: -7%;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            font-family: var(--fontFamily);
+        }
+
+
+
+
+        .carousel-caption h1 {
+            font-size: 120%;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 15px #000;
+            letter-spacing: .2rem;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            font-family: var(--fontFamily);
+
+        }
+
+        .carousel-caption h3 {
+            font-size: 90%;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-shadow: 1px 1px 15px #000;
+            letter-spacing: .2rem;
+            padding-top: -4rem;
+            padding-bottom: 5px;
+            font-family: var(--fontFamily);
+        }
+
+        .carousel-indicators {
+
+            display: none;
+        }
+
+
+        .carousel-caption .btn {
+            height: 40%;
+            font-size: 70%;
+            margin-bottom: 10px;
+
+            font-weight: 400;
+        }
+
+        /*--hometwoimage--*/
+        .card-body h2 {
+            font-size: 22px;
+        }
+
+        /*--map--*/
+        .list-group-item {
+            font-size: 15px;
+        }
+
+        /* newsletter */
+        .newsletterContainer {
+            margin: 30px 10% 30px 10%;
+        }
+
+        .newsletterInfo h3 {
+            font-size: 18px;
+        }
+
+        .newsletterInfo h5 {
+            font-size: 15px;
+
+        }
+
+        button[type="submit"] {
+            margin: 15px 45% 30px 35%;
+
+        }
+
+
+        /* footer */
+        .pull-right {
+            margin-right: 40px;
+        }
+    }
