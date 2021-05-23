@@ -34,7 +34,7 @@ body {
 
 .navbar-dark {
     background-color: #362E24;
-    height: 70x;
+    height: 70px;
 }
 
 .nav-text {
@@ -246,11 +246,244 @@ button[type="submit"] {
 }
 
 /*------------------------------------------------------------------------Media Queries--*/
-/*-------------------------------------Media Queries for 992px--*/
-@media only screen and(max-width: 992px) {}
+/*----------------------------------------------------------------------------------------Media Queries-min-width:600px*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
 
-/*-------------------------------------Media Queries for 769px--*/
-@media only screen and (max-width: 768px) {
+
+
+    /* nav */
+    .navbar-dark {
+        background-color: #362E24;
+        height: 60px;
+    }
+
+    .nav-text {
+        font-family: var(--fontFamily);
+        font-weight: 400;
+        font-size: 15px;
+
+
+    }
+
+    .logoImg {
+        width: 22%;
+        height: 22%;
+        margin: 5px;
+    }
+
+    /* carousel */
+    .carousel {
+        margin-top: -7%;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        font-family: var(--fontFamily);
+    }
+
+
+
+
+    .carousel-caption h1 {
+        font-size: 120%;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+        letter-spacing: .2rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-family: var(--fontFamily);
+
+    }
+
+    .carousel-caption h3 {
+        font-size: 90%;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+        letter-spacing: .2rem;
+
+        padding-bottom: 5px;
+        font-family: var(--fontFamily);
+    }
+
+    .carousel-indicators {
+
+        display: none;
+    }
+
+
+    .carousel-caption .btn {
+        height: 40%;
+        font-size: 70%;
+        margin-bottom: 10px;
+
+        font-weight: 400;
+    }
+
+    /*--hometwoimage--*/
+    .card-body h2 {
+        font-size: 22px;
+    }
+
+    /*--map--*/
+    .list-group-item {
+        font-size: 15px;
+    }
+
+    /* newsletter */
+    .newsletterContainer {
+        margin: 30px 10% 30px 10%;
+    }
+
+    .newsletterInfo h3 {
+        font-size: 18px;
+    }
+
+    .newsletterInfo h5 {
+        font-size: 15px;
+
+    }
+
+    button[type="submit"] {
+        margin: 15px 45% 30px 35%;
+
+    }
+
+
+    /* footer */
+    .pull-right {
+        margin-right: 40px;
+    }
+}
+
+/*----------------------------------------------------------------------------------------Media Queries-min-width:600px*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    /*----------------------------Media Queries-nav-min-width:600px*/
+
+
+    /* nav */
+    .navbar-dark {
+        background-color: #362E24;
+        height: 60px;
+    }
+
+    .nav-text {
+        font-family: var(--fontFamily);
+        font-weight: 400;
+        font-size: 15px;
+
+
+    }
+
+    .logoImg {
+        width: 22%;
+        height: 22%;
+        margin: 5px;
+    }
+
+    /* carousel */
+    .carousel {
+        margin-top: -7%;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        font-family: var(--fontFamily);
+    }
+
+
+
+
+    .carousel-caption h1 {
+        font-size: 120%;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+        letter-spacing: .2rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-family: var(--fontFamily);
+
+    }
+
+    .carousel-caption h3 {
+        font-size: 90%;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+        letter-spacing: .2rem;
+        padding-bottom: 5px;
+        font-family: var(--fontFamily);
+    }
+
+    .carousel-indicators {
+
+        display: none;
+    }
+
+
+    .carousel-caption .btn {
+        height: 40%;
+        font-size: 70%;
+        margin-bottom: 10px;
+
+        font-weight: 400;
+    }
+
+    /*--hometwoimage--*/
+    .card-body h2 {
+        font-size: 22px;
+    }
+
+    /* map */
+    .list-group-item {
+        font-size: 15px;
+    }
+
+    /* newsletter */
+
+    .newsletterInfo h3 {
+        font-size: 22px;
+    }
+
+    .newsletterInfo h5 {
+        font-size: 15px;
+
+    }
+
+    .newsletterContainer {
+        margin: 30px 10% 30px 10%;
+    }
+
+    button[type="submit"] {
+        margin: 15px 45% 30px 35%;
+
+    }
+
+    /* footer */
+    .pull-right {
+        margin-right: 40px;
+    }
+}
+
+
+/*---------------------------------------------------------------------------------------Media Queries-min-width:768px*/
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+
+    /*----------------------------nav-min-width:768px*/
+
 
     /*--carousel--*/
     .carousel-caption {
@@ -343,228 +576,3 @@ button[type="submit"] {
         font-size: 15px;
     }
 }
-
-/*-------------------------------------Media Queries for 576px--*/
-@media(max-width: 576px) {
-
-    /* nav */
-    .navbar-dark {
-        background-color: #362E24;
-        height: 60px;
-    }
-
-    .nav-text {
-        font-family: var(--fontFamily);
-        font-weight: 400;
-        font-size: 15px;
-
-
-    }
-
-    .logoImg {
-        width: 22%;
-        height: 22%;
-        margin: 5px;
-    }
-
-    /* carousel */
-    .carousel {
-        margin-top: -7%;
-    }
-
-    .carousel-caption {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-
-        font-family: var(--fontFamily);
-    }
-
-
-
-
-    .carousel-caption h1 {
-        font-size: 120%;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 15px #000;
-        letter-spacing: .2rem;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        font-family: var(--fontFamily);
-
-    }
-
-    .carousel-caption h3 {
-        font-size: 90%;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 15px #000;
-        letter-spacing: .2rem;
-        padding-top: -4rem;
-        padding-bottom: 5px;
-        font-family: var(--fontFamily);
-    }
-
-    .carousel-indicators {
-
-        display: none;
-    }
-
-
-    .carousel-caption .btn {
-        height: 40%;
-        font-size: 70%;
-        margin-bottom: 10px;
-
-        font-weight: 400;
-    }
-
-    /*--hometwoimage--*/
-    .card-body h2 {
-        font-size: 22px;
-    }
-
-    /* map */
-    .list-group-item {
-        font-size: 15px;
-    }
-
-    /* newsletter */
-
-    .newsletterInfo h3 {
-        font-size: 22px;
-    }
-
-    .newsletterInfo h5 {
-        font-size: 15px;
-
-    }
-
-    .newsletterContainer {
-        margin: 30px 10% 30px 10%;
-    }
-
-    button[type="submit"] {
-        margin: 15px 45% 30px 35%;
-
-    }
-
-    /* footer */
-     .pull-right {
-            margin-right: 40px;
-        }
-    }
-        
-
-    @media(min-width: 576px) {
-
-
-        /* nav */
-        .navbar-dark {
-            background-color: #362E24;
-            height: 60px;
-        }
-
-        .nav-text {
-            font-family: var(--fontFamily);
-            font-weight: 400;
-            font-size: 15px;
-
-
-        }
-
-        .logoImg {
-            width: 22%;
-            height: 22%;
-            margin: 5px;
-        }
-
-        /* carousel */
-        .carousel {
-            margin-top: -7%;
-        }
-
-        .carousel-caption {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-
-            font-family: var(--fontFamily);
-        }
-
-
-
-
-        .carousel-caption h1 {
-            font-size: 120%;
-            font-weight: 400;
-            text-transform: uppercase;
-            text-shadow: 1px 1px 15px #000;
-            letter-spacing: .2rem;
-            padding-top: 2rem;
-            padding-bottom: 1rem;
-            font-family: var(--fontFamily);
-
-        }
-
-        .carousel-caption h3 {
-            font-size: 90%;
-            font-weight: 400;
-            text-transform: uppercase;
-            text-shadow: 1px 1px 15px #000;
-            letter-spacing: .2rem;
-            padding-top: -4rem;
-            padding-bottom: 5px;
-            font-family: var(--fontFamily);
-        }
-
-        .carousel-indicators {
-
-            display: none;
-        }
-
-
-        .carousel-caption .btn {
-            height: 40%;
-            font-size: 70%;
-            margin-bottom: 10px;
-
-            font-weight: 400;
-        }
-
-        /*--hometwoimage--*/
-        .card-body h2 {
-            font-size: 22px;
-        }
-
-        /*--map--*/
-        .list-group-item {
-            font-size: 15px;
-        }
-
-        /* newsletter */
-        .newsletterContainer {
-            margin: 30px 10% 30px 10%;
-        }
-
-        .newsletterInfo h3 {
-            font-size: 18px;
-        }
-
-        .newsletterInfo h5 {
-            font-size: 15px;
-
-        }
-
-        button[type="submit"] {
-            margin: 15px 45% 30px 35%;
-
-        }
-
-
-        /* footer */
-        .pull-right {
-            margin-right: 40px;
-        }
-    }
