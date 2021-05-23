@@ -47,7 +47,7 @@ body {
 
 /*--------------------------------------------section*/
 
-#dublin2heading {
+.cafeHeadingText {
     font-weight: 400;
     padding-bottom: 50px;
     text-align: center;
@@ -55,21 +55,7 @@ body {
     color: #333a40;
 }
 
-#dublin6heading {
-    font-weight: 400;
-    padding-bottom: 50px;
-    text-align: center;
-    text-shadow: 0.95px 0.95px .95px #000;
-    color: #333a40;
-}
 
-#dublin8heading {
-    font-weight: 400;
-    padding-bottom: 50px;
-    text-align: center;
-    text-shadow: 0.95px 0.95px .95px #000;
-    color: #333a40;
-}
 
 
 /*----------------------------cafes image hover*/
