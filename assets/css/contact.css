@@ -29,7 +29,7 @@ body {
 
     margin: 0px;
     padding: 0px;
-   font-family: var(--fontFamily);
+    font-family: var(--fontFamily);
 
 
 }
@@ -44,6 +44,7 @@ body {
     width: 35%;
     height: 35%;
 }
+
 /*--------------------------------------------section*/
 /*----------------------------form*/
 .cardImageText {
@@ -81,6 +82,7 @@ img {
     padding: 0;
     position: relative;
 
+
 }
 
 .contactFormOuter {
@@ -91,27 +93,24 @@ img {
 
 .boxTest {
     margin: 150px 40px;
-    background-color: #fff;
+    background-color: rgb(252, 243, 233);
     padding: 50px;
     height: 100%;
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
 
-.contactText {
-    background-color: rgb(241, 236, 191);
-    margin: 0;
-}
+
 
 /*----------------------------footer*/
 .fixed-bottom {
-   background-color: rgb(252, 243, 233);
+    background-color: rgb(252, 243, 233);
 }
 
 .footer-outer {
-   
+
     padding: 10px 10px 10px 10px;
-  
+
 }
 
 .aboutLink {
@@ -124,16 +123,19 @@ img {
     font-weight: 500;
     font-family: var(--fontFamily);
 
- 
-    
+
+
 }
+
 .list-inline {
-margin-bottom: 0px;
+    margin-bottom: 0px;
 }
+
 .list-inline-item:not(:last-child) {
     margin-right: .5rem;
     margin-top: 7px;
 }
+
 .list-inline-item {
     display: inline-block;
     justify-content: space-around;

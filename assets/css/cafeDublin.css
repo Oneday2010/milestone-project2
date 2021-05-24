@@ -49,12 +49,12 @@ body {
 /*------------------------------------------------------------section*/
 .cafeDublin-container {
     background-color: rgb(252, 243, 233);
-    margin: 0 auto;
+    margin: 80px auto 90px auto;
     padding: 20px 20px 40px 20px;
     border: 0px solid;
     border-radius: 25px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-   margin-top: 16%;
+    margin-top: 16%;
     justify-content: center;
     align-items: center;
 }
@@ -64,7 +64,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 350%;
     font-weight: 500;
-    padding:20px;
+    padding: 20px;
     text-align: center;
     /* text-shadow: 0.25px 0.25px .25px rgb(82, 82, 82); */
     color: #352e24;
@@ -139,13 +139,13 @@ p {
 
 /*----------------------------footer*/
 .fixed-bottom {
-   background-color: rgb(252, 243, 233);
+    background-color: rgb(252, 243, 233);
 }
 
 .footer-outer {
-   
+
     padding: 10px;
-  
+
 }
 
 .aboutLink {
@@ -158,16 +158,19 @@ p {
     font-weight: 500;
     font-family: var(--fontFamily);
 
- 
-    
+
+
 }
+
 .list-inline {
-margin-bottom: 0px;    
+    margin-bottom: 0px;    
 }
+
 .list-inline-item:not(:last-child) {
     margin-right: .5rem;
     margin-top: 7px;
 }
+
 .list-inline-item {
     display: inline-block;
     justify-content: space-around;

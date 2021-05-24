@@ -46,9 +46,13 @@ body {
 }
 
 /*--------------------------------------------section*/
+.gallaryOuter {
+    margin: auto;
+    
+}
 .gallary-container {
     background-color: rgb(252, 243, 233);
-    margin: 0 auto;
+    margin: 30px auto 90px auto;
     padding: 20px 20px 40px 20px;
     border: 0px solid;
     border-radius: 25px;
@@ -75,6 +79,7 @@ body {
 
 .cafePhoto {
     padding: 20px 0 20px 0;
+    margin-left: 18px;
 }
 
 .gallaryPhotos {
@@ -83,7 +88,59 @@ body {
     margin: 10px;
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-    border: 10px solid white;
+    border: 5px solid white;
+    position: relative;
+}
+
+.gallaryImg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    margin: 30px 10px 20px 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    border: 5px solid white;
+}
+
+.cafePhoto:hover .overlay {
+    opacity: 0.9;
+}
+
+.text {
+
+    color: #352e24;
+    font-size: 34px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+
+}
+
+.text:hover {
+    color: #dc3444;
+    text-decoration: none;
+
+
+
 }
 
 
