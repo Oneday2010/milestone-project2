@@ -1,20 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root {
-    --fontFamily: 'Inter', sans-serif;
-    --bagImgColor: #FFEDCB;
+    --fontFamily: 'Poppins', sans-serif;
+    --bagColor: #352e24;
 }
-
 
 html {
     height: auto;
-    min-height: 100vh;
 
 }
 
 body {
     width: 100%;
-    height: 100%;
+    height: 200%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +29,7 @@ body {
 
     margin: 0px;
     padding: 0px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fontFamily);
 
 
 }
@@ -48,23 +46,32 @@ body {
 }
 
 /*--------------------------------------------section*/
+.gallary-container {
+    background-color: rgb(252, 243, 233);
+    margin: 0 auto;
+    padding: 20px 20px 40px 20px;
+    border: 0px solid;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    margin-top: 16%;
+    justify-content: center;
+    align-items: center;
+}
+
 #gallaryheading {
-    font-weight: 400;
-    padding-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 300%;
+    font-weight: 500;
+    padding: 20px;
     text-align: center;
-    text-shadow: 0.95px 0.95px .95px rgb(0, 0, 0);
-    color: #333a40;
+    color: #352e24;
 
 }
 
 
 /*----------------------------cafe photos*/
 /*With Simple Caption*/
-.container {
-    margin-top: 10vh;
 
-
-}
 
 .cafePhoto {
     padding: 20px 0 20px 0;
@@ -79,63 +86,40 @@ body {
     border: 10px solid white;
 }
 
-.column.gallaryCaption {
-    position: relative;
-}
-
-.column.gallaryCaption .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-80%, -80%);
-    z-index: 10;
-    opacity: 0;
-    transition: all 0.8s ease;
-}
-
-.column.gallaryCaption .text h3 {
-    margin: 0;
-    color: black;
-    font-family: var(--fontFamily);
-    font-weight: 500;
-    text-transform: uppercase;
-    font-size: 150%;
-    text-shadow: 1px 1px 15px #000;
-    letter-spacing: .5rem;
-}
-
-.text {
-    margin-left: 10%;
-}
-
-
-
-
-.column#gallaryCaption:hover .text {
-    opacity: 1;
-
-}
-
-.column#gallaryCaption:hover img {
-    filter: opacity(20%);
-}
 
 
 /*----------------------------footer*/
-/*----------------------------footer*/
+.fixed-bottom {
+    background-color: rgb(252, 243, 233);
+}
+
 .footer-outer {
 
-    padding: 25px 25px 10px;
-   background-color: var(--bagImgColor);
+    padding: 10px 10px 10px 10px;
 
 }
 
+.aboutLink {
+    margin-top: 10px;
+}
 
 .footerText {
     color: #dc3444;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     font-family: var(--fontFamily);
+
+
+
+}
+
+.list-inline {
+    margin-bottom: 0px;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: .5rem;
+    margin-top: 7px;
 }
 
 .list-inline-item {
@@ -144,9 +128,8 @@ body {
     margin: 0px 10px 0px 30px;
 }
 
-
 .aboutLink .footerText:hover {
-    color: #f7a043;
+    color: #f4873b;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -171,5 +154,72 @@ body {
 }
 
 .socialLink li a i:hover {
-    background: #f7a043;
+    background: #f4873b;
+}
+
+
+/*--------------------------------------------------------------------------------------Media Queries--*/
+
+
+/*---------------------------------------------------------------------------------------Media Queries-max-width:768px*/
+
+@media only screen and (max-width: 768px) {
+
+
+    /*----------------------------min-width:768px*/
+    /* nav */
+    .navbar-dark {
+        background-color: #362E24;
+        height: 60px;
+    }
+
+    .nav-text {
+        font-family: var(--fontFamily);
+        font-weight: 400;
+        font-size: 15px;
+
+
+    }
+
+    .logoImg {
+        width: 22%;
+        height: 22%;
+        margin: 5px;
+    }
+}
+
+/* --------------------------------------------------------------------mxa-width:600px */
+
+@media only screen and (max-width: 600px) {
+
+
+
+    /* nav */
+    .navbar-dark {
+        background-color: #362E24;
+        height: 60px;
+    }
+
+    .nav-text {
+        font-family: var(--fontFamily);
+        font-weight: 400;
+        font-size: 15px;
+
+    }
+
+
+    .logoImg {
+        width: 22%;
+        height: 30%;
+        margin: 5px;
+    }
+
+    /* footer */
+    .footer-outer {
+        padding: 0px;
+    }
+
+    .list-inline {
+        margin: 10px 40px 10px 5px;
+    }
 }

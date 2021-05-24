@@ -1,19 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 :root {
-    --fontFamily: 'Inter', sans-serif;
-    --bagImgColor: #FFEDCB;
+    --fontFamily: 'Poppins', sans-serif;
+    --bagColor: #352e24;
 }
 
 
 html {
     height: auto;
+   
 
 }
 
 body {
     width: 100%;
-    height: 200%;
+    height: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,13 +23,15 @@ body {
 
 /*--------------------------------------------heading*/
 /*----------------------------nav*/
-.navbar-dark { background-color:#362E24;
+.navbar-dark {
+    background-color: #362E24;
 }
+
 .nav-container {
 
     margin: 0px;
     padding: 0px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fontFamily);
 
 
 }
@@ -43,13 +46,14 @@ body {
     width: 35%;
     height: 35%;
 }
+
 /*----------------------------carousel*/
 .carouser {
     margin-bottom: -100x;
 }
 
 .carousel-inner img {
-    margin-top: 80px;
+    margin-top: 60px;
     width: 100%;
     height: 100%;
     opacity: 0.9;
@@ -59,7 +63,7 @@ body {
 
 .carousel-caption {
     position: absolute;
-    top: 70%;
+    top: 60%;
     transform: translateY(-50%);
 
     font-family: var(--fontFamily);
@@ -189,18 +193,37 @@ button[type="submit"] {
 
 
 /*----------------------------footer*/
-.footer-outer {
-
-    padding: 25px 25px 10px;
-    background-color: var(--bagImgColor);
+.footer-container{
+    background-color: rgb(252, 243, 233);
 }
 
+.footer-outer {
+
+    padding: 10px 10px 10px 10px;
+
+}
+
+.aboutLink {
+    margin-top: 10px;
+}
 
 .footerText {
     color: #dc3444;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     font-family: var(--fontFamily);
+
+
+
+}
+
+.list-inline {
+    margin-bottom: 0px;
+}
+
+.list-inline-item:not(:last-child) {
+    margin-right: .5rem;
+    margin-top: 7px;
 }
 
 .list-inline-item {
@@ -210,7 +233,7 @@ button[type="submit"] {
 }
 
 .aboutLink .footerText:hover {
-    color: #f7a043;
+    color: #f4873b;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -235,263 +258,19 @@ button[type="submit"] {
 }
 
 .socialLink li a i:hover {
-    background: #f7a043;
+    background: #f4873b;
 }
 
 /*--------------------------------------------------------------------------------------Media Queries--*/
-/* --------------------------------------------------------------------mxa-width:600px */
 
-@media only screen and (max-width: 600px) {
 
+/*---------------------------------------------------------------------------------------Media Queries-max-width:768px*/
 
-
-    /* nav */
-    .navbar-dark {
-        background-color: #362E24;
-        height: 60px;
-    }
-
-    .nav-text {
-        font-family: var(--fontFamily);
-        font-weight: 400;
-        font-size: 15px;
-
-    }
-
-
-    .logoImg {
-        width: 22%;
-        height: 30%;
-        margin: 5px;
-    }
-
-    /* carousel */
-   
-    
-
-    .carousel-caption {
-        position: absolute;
-        top: 40%;
-        transform: translateY(-50%);
-
-        font-family: var(--fontFamily);
-    }
-
-.carousel-inner img {
-   margin-top:60px;
-}
-
-
-    .carousel-caption h1 {
-        font-size: 100%;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 15px #000;
-        letter-spacing: .2rem;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        font-family: var(--fontFamily);
-
-    }
-
-    .carousel-caption h3 {
-        font-size: 80%;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 15px #000;
-        letter-spacing: .2rem;
-
-        padding-bottom: 5px;
-        font-family: var(--fontFamily);
-    }
-
-    .carousel-indicators {
-
-        display: none;
-    }
-
-
-    .carousel-caption .btn {
-        height: 40%;
-        font-size: 70%;
-        margin-bottom: 10px;
-
-        font-weight: 400;
-    }
-
-    /*--hometwoimage--*/
-    .card-body h2 {
-        font-size: 22px;
-    }
-
-    /*--map--*/
-    .list-group-item {
-        font-size: 12px;
-    }
-    #map {
-        margin: 10px;
-        height: 300px;
-    }
-    #mapText {
-        margin: 10px;
-    }
-
-    /* newsletter */
-    .newsletterContainer {
-        margin: 30px 10% 30px 10%;
-    }
-
-    .newsletterInfo h3 {
-        font-size: 18px;
-    }
-
-    .newsletterInfo h5 {
-        font-size: 14px;
-
-    }
-    .newsletterInfo {
-        margin: 5px 5px;
-    }
-
-    button[type="submit"] {
-        margin: 5px 25% 20px 30%;
-        font-size: small;
-        
-
-    }
-
-
-    /* footer */
-    .footer-outer {
-        padding: 0px;
-    }
-    .list-inline{
-       margin: 10px 40px 10px 5px;
-    }
-}
-
-/*----------------------------------------------------------------------------------------Media Queries-min-width:600px*/
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-    /*----------------------------Media Queries-nav-min-width:600px*/
-
-
-   /* nav */
-    .navbar-dark {
-        background-color: #362E24;
-        height: 60px;
-    }
-
-    .nav-text {
-        font-family: var(--fontFamily);
-        font-weight: 400;
-        font-size: 15px;
-
-
-    }
-
-    .logoImg {
-        width: 22%;
-        height: 30%;
-        margin: 5px;
-    }
-    /* carousel */
-    .carousel {
-        margin-top: -7%;
-    }
-
-    .carousel-caption {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-
-        font-family: var(--fontFamily);
-    }
-
-
-
-
-    .carousel-caption h1 {
-        font-size: 120%;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 15px #000;
-        letter-spacing: .2rem;
-        padding-top: 2rem;
-        padding-bottom: 1rem;
-        font-family: var(--fontFamily);
-
-    }
-
-    .carousel-caption h3 {
-        font-size: 90%;
-        font-weight: 400;
-        text-transform: uppercase;
-        text-shadow: 1px 1px 15px #000;
-        letter-spacing: .2rem;
-        padding-bottom: 5px;
-        font-family: var(--fontFamily);
-    }
-
-    .carousel-indicators {
-
-        display: none;
-    }
-
-
-    .carousel-caption .btn {
-        height: 40%;
-        font-size: 70%;
-        margin-bottom: 10px;
-
-        font-weight: 400;
-    }
-
-    /*--hometwoimage--*/
-    .card-body h2 {
-        font-size: 22px;
-    }
-
-    /* map */
-    .list-group-item {
-        font-size: 15px;
-    }
-
-    /* newsletter */
-
-    .newsletterInfo h3 {
-        font-size: 22px;
-    }
-
-    .newsletterInfo h5 {
-        font-size: 15px;
-
-    }
-
-    .newsletterContainer {
-        margin: 30px 10% 30px 10%;
-    }
-
-    button[type="submit"] {
-        margin: 15px 45% 30px 35%;
-
-    }
-
-    /* footer */
-    .pull-right {
-        margin-right: 40px;
-    }
-}
-
-
-/*---------------------------------------------------------------------------------------Media Queries-min-width:768px*/
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 
 
     /*----------------------------min-width:768px*/
- /* nav */
+    /* nav */
     .navbar-dark {
         background-color: #362E24;
         height: 60px;
@@ -604,95 +383,146 @@ button[type="submit"] {
     }
 }
 
-/*--------------------------------------------------min-width: 900px -----------------------------------------------------------------*/
-@media only screen and (min-width: 900px) {
+/* --------------------------------------------------------------------mxa-width:600px */
 
-
-    /*---------------------------------------------------nav-min-width: 900px*/
-.nav-container {
-
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Inter', sans-serif;
-    
-
-
-}
-.nav-item {
-    font-size: medium;
-}
-.navbar-dark {
-    background-color: #362E24;
-    height: 60px;
-}
-
-.nav-text {
-    font-family: var(--fontFamily);
-    font-weight: 500;
-    font-size: medium;
-}
+@media only screen and (max-width: 600px) {
 
 
 
-.logoImg {
-    width: 25%;
-    height: 25%;
-    margin: 15px;
-}
+    /* nav */
+    .navbar-dark {
+        background-color: #362E24;
+        height: 60px;
+    }
 
-/*--------------------------------------------section*/
-/*----------------------------main slideshow*/
-.carouser {
-    margin-bottom: -120px;
-}
+    .nav-text {
+        font-family: var(--fontFamily);
+        font-weight: 400;
+        font-size: 15px;
 
-.carousel-inner img {
-    margin-top: 100px;
-    width: 100%;
-    height: 100%;
-    opacity: 0.9;
-}
+    }
 
 
+    .logoImg {
+        width: 22%;
+        height: 30%;
+        margin: 5px;
+    }
 
-.carousel-caption {
-    position: absolute;
-    top: 60%;
-    transform: translateY(-50%);
-
-    font-family: var(--fontFamily);
-}
-
-.carousel-caption h1 {
-    font-size: 250%;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 15px #000;
-    letter-spacing: .3rem;
-    padding-bottom: 2rem;
-    font-family: var(--fontFamily);
-
-}
-
-.carousel-caption h3 {
-    font-size: 180%;
-    font-weight: 500;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 15px #000;
-    letter-spacing: .3rem;
-    padding-bottom: 20px;
-    margin-bottom: 10px;
-    font-family: var(--fontFamily);
-}
-
-.carousel-caption .btn {
-    font-size: 120%;
-    margin: 0 auto;
-    font-weight: 500;
-    height: 50px;
-}
+    /* carousel */
 
 
 
+    .carousel-caption {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
 
+        font-family: var(--fontFamily);
+    }
+
+    .carousel-inner img {
+        margin-top: 60px;
+    }
+
+
+    .carousel-caption h1 {
+        font-size: 100%;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+        letter-spacing: .2rem;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        font-family: var(--fontFamily);
+
+    }
+
+    .carousel-caption h3 {
+        font-size: 80%;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 15px #000;
+        letter-spacing: .2rem;
+
+        padding-bottom: 5px;
+        font-family: var(--fontFamily);
+    }
+
+    .carousel-indicators {
+
+        display: none;
+    }
+
+
+    .carousel-caption .btn {
+        height: 40%;
+        font-size: 70%;
+        margin-bottom: 10px;
+
+        font-weight: 400;
+    }
+
+    /*--hometwoimage--*/
+    .homeTwoCard {
+        padding: 0px;
+    }
+
+    .card-body h2 {
+        font-size: 22px;
+    }
+
+    /*--map--*/
+    .list-group-item {
+        font-size: 12px;
+    }
+
+    #map {
+        margin: 10px;
+        height: 300px;
+
+    }
+
+    .map-caption-outer {
+        margin: 15px;
+    }
+
+    #mapText {
+        margin: 10px;
+    }
+
+    /* newsletter */
+    .newsletterContainer {
+        margin: 30px 10% 30px 10%;
+    }
+
+    .newsletterInfo h3 {
+        font-size: 15px;
+    }
+
+    .newsletterInfo h5 {
+        font-size: 14px;
+
+    }
+
+    .newsletterInfo {
+        margin: 5px 5px;
+    }
+
+    button[type="submit"] {
+        margin: 5px 25% 20px 30%;
+        font-size: small;
+
+
+    }
+
+
+    /* footer */
+    .footer-outer {
+        padding: 0px;
+    }
+
+    .list-inline {
+        margin: 10px 40px 10px 5px;
+    }
 }
