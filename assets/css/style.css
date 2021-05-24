@@ -22,39 +22,8 @@ body {
 
 /*--------------------------------------------heading*/
 /*----------------------------nav*/
-
-.nav-container {
-
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Inter', sans-serif;
-
-
-}
-
-.navbar-dark {
-    background-color: #362E24;
-    height: 70px;
-}
-
-.nav-text {
-    font-family: var(--fontFamily);
-    font-weight: 500;
-    font-size: 20px;
-
-
-}
-
-.logoImg {
-    width: 25%;
-    height: 25%;
-    margin: 10px;
-}
-
-/*--------------------------------------------section*/
-/*----------------------------main slideshow*/
 .carouser {
-    margin-bottom: -50rem;
+    margin-bottom: -100x;
 }
 
 .carousel-inner img {
@@ -68,7 +37,7 @@ body {
 
 .carousel-caption {
     position: absolute;
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%);
 
     font-family: var(--fontFamily);
@@ -91,16 +60,17 @@ body {
     text-transform: uppercase;
     text-shadow: 1px 1px 15px #000;
     letter-spacing: .3rem;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
     font-family: var(--fontFamily);
 }
 
 .carousel-caption .btn {
     font-size: 120%;
-    padding-top: 10px;
+    margin: 0 auto;
     font-weight: 500;
+    height: 50px;
 }
-
 
 
 
@@ -116,7 +86,8 @@ body {
 }
 
 .my-col {
-    margin: 50px;
+    margin: 20px 10px 20px 10px;
+    ;
     font-family: var(--fontFamily);
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
@@ -245,9 +216,9 @@ button[type="submit"] {
     background: #f7a043;
 }
 
-/*------------------------------------------------------------------------Media Queries--*/
-/*----------------------------------------------------------------------------------------Media Queries-min-width:600px*/
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/*--------------------------------------------------------------------------------------Media Queries--*/
+/* --------------------------------------------------------------------mxa-width:600px */
+
 @media only screen and (max-width: 600px) {
 
 
@@ -263,33 +234,34 @@ button[type="submit"] {
         font-weight: 400;
         font-size: 15px;
 
-
     }
+
 
     .logoImg {
         width: 22%;
-        height: 22%;
+        height: 30%;
         margin: 5px;
     }
 
     /* carousel */
-    .carousel {
-        margin-top: -7%;
-    }
+   
+    
 
     .carousel-caption {
         position: absolute;
-        top: 50%;
+        top: 40%;
         transform: translateY(-50%);
 
         font-family: var(--fontFamily);
     }
 
-
+.carousel-inner img {
+   margin-top:60px;
+}
 
 
     .carousel-caption h1 {
-        font-size: 120%;
+        font-size: 100%;
         font-weight: 400;
         text-transform: uppercase;
         text-shadow: 1px 1px 15px #000;
@@ -301,7 +273,7 @@ button[type="submit"] {
     }
 
     .carousel-caption h3 {
-        font-size: 90%;
+        font-size: 80%;
         font-weight: 400;
         text-transform: uppercase;
         text-shadow: 1px 1px 15px #000;
@@ -332,7 +304,14 @@ button[type="submit"] {
 
     /*--map--*/
     .list-group-item {
-        font-size: 15px;
+        font-size: 12px;
+    }
+    #map {
+        margin: 10px;
+        height: 300px;
+    }
+    #mapText {
+        margin: 10px;
     }
 
     /* newsletter */
@@ -345,19 +324,27 @@ button[type="submit"] {
     }
 
     .newsletterInfo h5 {
-        font-size: 15px;
+        font-size: 14px;
 
+    }
+    .newsletterInfo {
+        margin: 5px 5px;
     }
 
     button[type="submit"] {
-        margin: 15px 45% 30px 35%;
+        margin: 5px 25% 20px 30%;
+        font-size: small;
+        
 
     }
 
 
     /* footer */
-    .pull-right {
-        margin-right: 40px;
+    .footer-outer {
+        padding: 0px;
+    }
+    .list-inline{
+       margin: 10px 40px 10px 5px;
     }
 }
 
@@ -368,7 +355,7 @@ button[type="submit"] {
     /*----------------------------Media Queries-nav-min-width:600px*/
 
 
-    /* nav */
+   /* nav */
     .navbar-dark {
         background-color: #362E24;
         height: 60px;
@@ -384,10 +371,9 @@ button[type="submit"] {
 
     .logoImg {
         width: 22%;
-        height: 22%;
+        height: 30%;
         margin: 5px;
     }
-
     /* carousel */
     .carousel {
         margin-top: -7%;
@@ -483,6 +469,25 @@ button[type="submit"] {
 
 
     /*----------------------------nav-min-width:768px*/
+ /* nav */
+    .navbar-dark {
+        background-color: #362E24;
+        height: 60px;
+    }
+
+    .nav-text {
+        font-family: var(--fontFamily);
+        font-weight: 400;
+        font-size: 15px;
+
+
+    }
+
+    .logoImg {
+        width: 22%;
+        height: 22%;
+        margin: 5px;
+    }
 
 
     /*--carousel--*/
@@ -575,4 +580,97 @@ button[type="submit"] {
         margin-top: 0px;
         font-size: 15px;
     }
+}
+
+/*--------------------------------------------------min-width: 900px -----------------------------------------------------------------*/
+@media only screen and (min-width: 900px) {
+
+
+    /*---------------------------------------------------nav-min-width: 900px*/
+.nav-container {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+    
+
+
+}
+.nav-item {
+    font-size: medium;
+}
+.navbar-dark {
+    background-color: #362E24;
+    height: 60px;
+}
+
+.nav-text {
+    font-family: var(--fontFamily);
+    font-weight: 500;
+    font-size: medium;
+}
+
+
+
+.logoImg {
+    width: 25%;
+    height: 25%;
+    margin: 15px;
+}
+
+/*--------------------------------------------section*/
+/*----------------------------main slideshow*/
+.carouser {
+    margin-bottom: -120px;
+}
+
+.carousel-inner img {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+}
+
+
+
+.carousel-caption {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+
+    font-family: var(--fontFamily);
+}
+
+.carousel-caption h1 {
+    font-size: 250%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+    letter-spacing: .3rem;
+    padding-bottom: 2rem;
+    font-family: var(--fontFamily);
+
+}
+
+.carousel-caption h3 {
+    font-size: 180%;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 15px #000;
+    letter-spacing: .3rem;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    font-family: var(--fontFamily);
+}
+
+.carousel-caption .btn {
+    font-size: 120%;
+    margin: 0 auto;
+    font-weight: 500;
+    height: 50px;
+}
+
+
+
+
 }
