@@ -22,6 +22,28 @@ body {
 
 /*--------------------------------------------heading*/
 /*----------------------------nav*/
+.navbar-dark { background-color:#362E24;
+}
+.nav-container {
+
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter', sans-serif;
+
+
+}
+
+.nav-text {
+    font-family: var(--fontFamily);
+    font-weight: 500;
+
+}
+
+.logoImg {
+    width: 35%;
+    height: 35%;
+}
+/*----------------------------carousel*/
 .carouser {
     margin-bottom: -100x;
 }
@@ -165,7 +187,7 @@ button[type="submit"] {
     margin: 15px 45% 30px 45%;
 }
 
-/*----------------------------footer*/
+
 /*----------------------------footer*/
 .footer-outer {
 
@@ -468,7 +490,7 @@ button[type="submit"] {
 @media only screen and (min-width: 768px) {
 
 
-    /*----------------------------nav-min-width:768px*/
+    /*----------------------------min-width:768px*/
  /* nav */
     .navbar-dark {
         background-color: #362E24;

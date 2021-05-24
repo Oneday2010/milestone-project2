@@ -79,11 +79,11 @@ body {
     border: 10px solid white;
 }
 
-.column#gallaryCaption {
+.column.gallaryCaption {
     position: relative;
 }
 
-.column#gallaryCaption .text {
+.column.gallaryCaption .text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -93,7 +93,7 @@ body {
     transition: all 0.8s ease;
 }
 
-.column#gallaryCaption .text h3 {
+.column.gallaryCaption .text h3 {
     margin: 0;
     color: black;
     font-family: var(--fontFamily);

@@ -16,8 +16,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <title>icoffeemap</title>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script>
         (function () {
             emailjs.init("user_FUzEBfyjy4FWd8gxBvBU9");
         })();
@@ -29,13 +29,13 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-container">
             <a class="navbar-brand nav-text" href="index.html"><img src="assets/images/icoffeemap-logo.png"
-                    class="logoImg"> icoffeemap
+                    class="logoImg" alt="logo image"> icoffeemap
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse nav-text" id="navbarNav ">
+            <div class="collapse navbar-collapse nav-text" id="navbarNav">
                 <ul class="nav navbar-nav ml-auto ">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html">HOME <span class="sr-only">Toggle navigation</span></a>
@@ -123,7 +123,8 @@
         <div class="row my-row">
 
             <div class="card col-sm  col-xm-12 my-col" style="width: 18rem;">
-                <img src="assets/images/home-images/cafeImage-cafes.jpg" class=" test-card card-img-top">
+                <img src="assets/images/home-images/cafeImage-cafes.jpg" alt="cafe iamge for cade1"
+                    class=" test-card card-img-top">
 
                 <div class="card-body">
 
@@ -200,86 +201,86 @@
         </div>
     </div>
     <!--news letter -->
-    <div>
-
-        <div class="container-fluid">
-            <div class="row newsletterContainer">
-
-                <div class="center-form">
-                    <div class="newsletterInfo">
-                        <h3>News letter</h3>
-                        <h5>Sign up to the first to hear about our latest updates</h5>
-                    </div>
-                    <form onsubmit="return newsLetter(this);">
-
-                        <div class="col-auto  mb-2">
-                            <input type="text" name="emailaddress" class="form-control" id="emailaddress"
-                                placeholder="Email" required />
-                        </div>
-                        <div class="col">
-                            <button type="submit" class="btn btn-danger mb-2" id="b-outer">Send</button>
-                        </div>
 
 
-                    </form>
+    <div class="container-fluid">
+        <div class="row newsletterContainer">
 
+            <div class="center-form">
+                <div class="newsletterInfo">
+                    <h3>News letter</h3>
+                    <h5>Sign up to the first to hear about our latest updates</h5>
                 </div>
+                <form onsubmit="return newsLetter(this);">
+
+                    <div class="col-auto  mb-2">
+                        <input type="text" name="emailaddress" class="form-control" id="emailaddress"
+                            placeholder="Email" required />
+                    </div>
+                    <div class="col">
+                        <button type="submit" class="btn btn-danger mb-2" id="b-outer">Send</button>
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--footer -->
+    <footer class="container-fluid">
+        <div class="row footer-outer">
+            <div class=" aboutLink col-md-6 d-none d-md-block">
+                <h5><a href="https://mindfulmapping.wordpress.com/about/" class="footerText" target="_blank">About
+                    </a></h5>
+            </div>
+
+            <div class="col-sm col-xm-12">
+
+                <ul class="list-inline pull-right socialLink ">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.facebook.com/minscoffeemap">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com/mapmaker17/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only ">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://mindfulmapping.wordpress.com">
+                            <i class="fa fa-wordpress" aria-hidden="true"></i>
+                            <span class="sr-only ">Wordpress</span>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 
-
-        <!--footer -->
-        <footer class="container-fluid">
-            <div class="row footer-outer">
-                <div class=" aboutLink col-md-6 d-none d-md-block">
-                    <h5><a href="https://mindfulmapping.wordpress.com/about/" class="footerText" target="_blank">About
-                        </a></h5>
-                </div>
-
-                <div class="col-sm col-xm-12">
-
-                    <ul class="list-inline pull-right socialLink ">
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://www.facebook.com/minscoffeemap">
-                                <i class="fa fa-facebook" aria-hidden="true"></i>
-                                <span class="sr-only">Facebook</span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://www.instagram.com/mapmaker17/">
-                                <i class="fa fa-instagram" aria-hidden="true"></i>
-                                <span class="sr-only ">Instagram</span>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://mindfulmapping.wordpress.com">
-                                <i class="fa fa-wordpress" aria-hidden="true"></i>
-                                <span class="sr-only ">Wordpress</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </footer>
+    </footer>
 
 
 
 
-        <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-        </script>
-        <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
 
-        <script async
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaqvMX_-jaNBWBobhK_jaNke7qliNHd6Q&callback=initMap">
-        </script>
-        <script src="assets/js/maps.js"></script>
-        <script src="assets/js/newsLetterRequest.js"></script>
-        <script src="assets/js/question.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaqvMX_-jaNBWBobhK_jaNke7qliNHd6Q&callback=initMap">
+    </script>
+    <script src="assets/js/maps.js"></script>
+    <script src="assets/js/newsLetterRequest.js"></script>
+    <script src="assets/js/question.js"></script>
 </body>
 
 </html>

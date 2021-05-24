@@ -24,8 +24,10 @@ body {
 
 /*--------------------------------------------heading*/
 /*----------------------------nav*/
-.navbar-dark { background-color:#362E24;
+.navbar-dark {
+    background-color: #362E24;
 }
+
 .nav-container {
 
     margin: 0px;
@@ -109,7 +111,7 @@ img {
 .footer-outer {
 
     padding: 25px 25px 10px;
-      background-color: var(--bagImgColor);
+    background-color: var(--bagImgColor);
 
 }
 
