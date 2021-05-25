@@ -67,7 +67,7 @@ body {
     font-weight: 500;
     padding: 20px;
     text-align: center;
-       color: #352e24;
+    color: #352e24;
 }
 
 p {
@@ -163,7 +163,7 @@ p {
 }
 
 .list-inline {
-    margin-bottom: 0px;    
+    margin-bottom: 0px;
 }
 
 .list-inline-item:not(:last-child) {
@@ -228,21 +228,31 @@ p {
 
 
     }
- /* cafe images */
-   
-    .cafeHeadingText {
-    font-family: 'Poppins', sans-serif;
-    font-size: 300%;
-    font-weight: 500;
-    padding: 20px;
-    text-align: center;
-       color: #352e24;
-}
 
-h4 {
-    font-size: 22px;
-}
-p {font-size: 18px;}
+    /* cafe images */
+    .cafeDublin-container {
+        margin: 80px auto 90px auto;
+        padding: 20px 20px 40px 20px;
+    }
+
+
+
+    .cafeHeadingText {
+        font-family: 'Poppins', sans-serif;
+        font-size: 300%;
+        font-weight: 500;
+        padding: 20px;
+        text-align: center;
+        color: #352e24;
+    }
+
+    h4 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 18px;
+    }
 
 
 }
@@ -274,21 +284,49 @@ p {font-size: 18px;}
     }
 
     /* cafe images */
-  
-    
-    .cafeHeadingText {
-    font-family: 'Poppins', sans-serif;
-    font-size: 250%;
-    font-weight: 400;
-    padding: 20px;
-    text-align: center;
-       color: #352e24;
-}
 
-h4 {
-    font-size: 22px;
-}
-p {font-size: 18px;}
+    .cafeDublin-container {
+        margin: 30% 10px;
+        padding: 5px;
+    }
+
+    .cafePhoto img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .cafePhoto .review {
+        width: 70%;
+        height: 80%;
+        padding: 5% 8%;
+        position: absolute;
+        content: "";
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateY(90deg);
+        transform-origin: 50%;
+        background-color: rgba(255, 255, 255, 0.9);
+        opacity: 0;
+        transition: all 0.4s ease-in;
+        font-size: 24px;
+    }
+
+    .cafeHeadingText {
+        font-family: 'Poppins', sans-serif;
+        font-size: 180%;
+        font-weight: 500;
+        padding: 20px;
+        text-align: center;
+        color: #352e24;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
 
 
     /* footer */
@@ -296,7 +334,7 @@ p {font-size: 18px;}
         padding: 0px;
     }
 
-   .list-inline {
+    .list-inline {
         margin: 10px 60px 10px 5px;
     }
 
