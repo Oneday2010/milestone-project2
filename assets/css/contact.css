@@ -110,7 +110,7 @@ img {
 
 
 /*----------------------------footer*/
-.fixed-bottom {
+.footer-container {
     background-color: rgb(252, 243, 233);
 }
 
@@ -129,6 +129,7 @@ img {
     text-transform: uppercase;
     font-weight: 500;
     font-family: var(--fontFamily);
+    font-size: 1.25rem;
 
 
 
@@ -186,7 +187,7 @@ img {
 @media only screen and (max-width: 768px) {
 
 
-    /*----------------------------min-width:768px*/
+    /*----------------------------max-width:768px*/
     /* nav */
     .navbar-dark {
         background-color: #362E24;
@@ -310,7 +311,7 @@ img {
 
 
     .boxTest {
-       
+
         margin: 100px 20px;
         background-color: rgb(252, 243, 233);
         padding: 10px;

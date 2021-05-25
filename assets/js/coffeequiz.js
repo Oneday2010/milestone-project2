@@ -167,6 +167,7 @@ function scoreRender() {
 
     scoreDiv.innerHTML = "<img src=" + img + ">";
     scoreDiv.innerHTML += "<h4>" + scorePerCent + "%</h4>";
-    scoreDiv.innerHTML += "<p>" + message + "</p>" + "<p>"
-
+    scoreDiv.innerHTML += "<p>" + message + "</p>" + "<p>";
+    
 }
+
