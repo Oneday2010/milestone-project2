@@ -40,10 +40,13 @@ body {
 
 }
 
+
 .logoImg {
-    width: 35%;
-    height: 35%;
+    width: 30%;
+    height: 30%;
+    margin: 5px;
 }
+
 
 /*--------------------------------------------section*/
 /*----------------------------form*/
@@ -233,6 +236,7 @@ img {
     }
 
     .list-inline {
-        margin: 10px 40px 10px 5px;
+        margin: 10px 60px 10px 5px;
     }
+
 }

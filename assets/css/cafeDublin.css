@@ -42,8 +42,9 @@ body {
 }
 
 .logoImg {
-    width: 35%;
-    height: 35%;
+    width: 30%;
+    height: 30%;
+    margin: 5px;
 }
 
 /*------------------------------------------------------------section*/
@@ -59,15 +60,14 @@ body {
     align-items: center;
 }
 
-/*----------------------------cafes image hover*/
+
 .cafeHeadingText {
     font-family: 'Poppins', sans-serif;
     font-size: 350%;
     font-weight: 500;
     padding: 20px;
     text-align: center;
-    /* text-shadow: 0.25px 0.25px .25px rgb(82, 82, 82); */
-    color: #352e24;
+       color: #352e24;
 }
 
 p {
@@ -228,12 +228,23 @@ p {
 
 
     }
+ /* cafe images */
+   
+    .cafeHeadingText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 300%;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+       color: #352e24;
+}
 
-    .logoImg {
-        width: 22%;
-        height: 22%;
-        margin: 5px;
-    }
+h4 {
+    font-size: 22px;
+}
+p {font-size: 18px;}
+
+
 }
 
 /* --------------------------------------------------------------------mxa-width:600px */
@@ -262,12 +273,31 @@ p {
         margin: 5px;
     }
 
+    /* cafe images */
+  
+    
+    .cafeHeadingText {
+    font-family: 'Poppins', sans-serif;
+    font-size: 250%;
+    font-weight: 400;
+    padding: 20px;
+    text-align: center;
+       color: #352e24;
+}
+
+h4 {
+    font-size: 22px;
+}
+p {font-size: 18px;}
+
+
     /* footer */
     .footer-outer {
         padding: 0px;
     }
 
-    .list-inline {
-        margin: 10px 40px 10px 5px;
+   .list-inline {
+        margin: 10px 60px 10px 5px;
     }
+
 }
