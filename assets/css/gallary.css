@@ -118,7 +118,7 @@ body {
 }
 
 .text {
-
+    text-align: center;
     color: #352e24;
     font-size: 34px;
     position: absolute;
@@ -249,6 +249,11 @@ body {
 
     }
 
+    .text {
+        font-size: 12px;
+        text-align: center;
+    }
+
 
     .gallaryPhotos {
 
@@ -343,6 +348,12 @@ body {
         border: 5px solid white;
         position: relative;
     }
+
+    .text {
+        font-size: 15px;
+        text-align: center;
+    }
+
 
     .overlay {
         position: absolute;
@@ -442,11 +453,16 @@ body {
         border: 5px solid white;
     }
 
+    .text {
+        font-size: 10px;
+        text-align: center;
+    }
+
 
     #gallaryheading {
         font-family: 'Poppins', sans-serif;
         margin-top: 10px;
-        font-size: 180%;
+        font-size: 160%;
         font-weight: 500;
         padding: 20px;
         text-align: center;

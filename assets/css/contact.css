@@ -16,7 +16,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
+    font-family: var(--fontFamily);
 }
 
 /*--------------------------------------------heading*/
@@ -52,7 +52,7 @@ body {
 /*----------------------------form*/
 .cardImageText {
     margin-top: 30px;
-
+    font-family: var(--fontFamily);
 }
 
 .card {
@@ -70,7 +70,7 @@ body {
 
 h5 {
     font-size: 15px;
-
+    font-family: var(--fontFamily);
 }
 
 img {
@@ -95,6 +95,7 @@ img {
 
 
 .boxTest {
+    font-family: var(--fontFamily);
     margin: 150px 40px;
     background-color: rgb(252, 243, 233);
     padding: 50px;
@@ -103,6 +104,9 @@ img {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
 
+.btn {
+    font-family: var(--fontFamily);
+}
 
 
 /*----------------------------footer*/
@@ -202,6 +206,9 @@ img {
         height: 22%;
         margin: 5px;
     }
+
+
+
 }
 
 /* --------------------------------------------------------------------mxa-width:600px */
@@ -238,5 +245,83 @@ img {
     .list-inline {
         margin: 10px 60px 10px 5px;
     }
+
+    /* section */
+    .cardImageText {
+        margin-top: 20px;
+        margin-left: 15%;
+        padding-left: 20px;
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .card {
+        border: none;
+
+    }
+
+    .card-body {
+        margin-top: 20px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 12px;
+
+    }
+
+    img {
+        width: 50%;
+        height: 50%;
+        border-radius: 80px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .formContainer {
+        margin-top: 50px;
+        padding: 0;
+        position: relative;
+
+
+    }
+
+    .contactFormOuter {
+        padding: 0px;
+        margin-top: 50px;
+
+    }
+
+    .form-group {
+        margin-left: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .form-control {
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+    .boxTest {
+       
+        margin: 100px 20px;
+        background-color: rgb(252, 243, 233);
+        padding: 10px;
+        height: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .btn-danger {
+        font-size: 15px;
+    }
+
 
 }
