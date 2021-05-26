@@ -93,11 +93,14 @@ body {
 }
 
 .carousel-caption .btn {
-    font-size: 120%;
-    margin: 0 auto;
-    font-weight: 500;
-    height: 50px;
+    font-size: 200%;
+    margin: 5px auto;
+    font-weight: 400;
+    height: 60px;
 }
+
+
+
 
 
 
@@ -325,9 +328,11 @@ button[type="submit"] {
 
 
     .carousel-caption .btn {
-        font-size: 95%;
-        padding: 8px;
+        font-size: 150%;
+        padding: 5px;
         font-weight: 500;
+        margin: 5px auto;
+        height: 50px;
     }
 
     /*--hometwoimage--*/
@@ -439,13 +444,12 @@ button[type="submit"] {
     }
 
     .carousel-caption h3 {
+        padding: 0px;
         font-size: 80%;
         font-weight: 400;
         text-transform: uppercase;
         text-shadow: 1px 1px 15px #000;
         letter-spacing: .2rem;
-
-        padding-bottom: 5px;
         font-family: var(--fontFamily);
     }
 
@@ -456,12 +460,14 @@ button[type="submit"] {
 
 
     .carousel-caption .btn {
-        height: 40%;
+        height: 30px;
         font-size: 70%;
-        margin-bottom: 10px;
-
+        margin: 5px auto;
         font-weight: 400;
+        padding: 5px;
     }
+
+
 
     /*--hometwoimage--*/
     .my-row {
