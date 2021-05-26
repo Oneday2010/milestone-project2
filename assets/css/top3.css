@@ -71,6 +71,9 @@ body {
 }
 
 /*--gallary cards--*/
+
+
+
 .top3-text {
     text-transform: uppercase;
     font-style: italic;
@@ -97,6 +100,7 @@ h3 {
 
 .my-col {
     margin: 20px 10px 20px 10px;
+    position: relative;
 
     font-family: var(--fontFamily);
     border-radius: 15px;
@@ -107,7 +111,10 @@ h3 {
     margin-top: 10px;
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-
+ 
+}
+.gallaryPhotos img {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
 
 .test-card {
@@ -267,6 +274,7 @@ h3 {
         text-align: center;
         color: #352e24;
     }
+
     h2 {
         font-size: 24px;
     }
@@ -325,9 +333,9 @@ h3 {
         padding: 5px;
     }
 
-h2 {
-    font-size: 18px;
-}
+    h2 {
+        font-size: 18px;
+    }
 
     .my-row {
         margin-left: 25px;
@@ -342,7 +350,8 @@ h2 {
     .card-body h2 {
         font-size: 22px;
     }
-     /* footer */
+
+    /* footer */
     .footer-outer {
         padding: 0px;
     }

@@ -8,7 +8,7 @@
 
 html {
     height: auto;
-   
+
 
 }
 
@@ -114,7 +114,6 @@ body {
 
 .my-col {
     margin: 20px 10px 20px 10px;
-    ;
     font-family: var(--fontFamily);
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
@@ -194,7 +193,7 @@ button[type="submit"] {
 
 
 /*----------------------------footer*/
-.footer-container{
+.footer-container {
     background-color: rgb(252, 243, 233);
 }
 
@@ -468,6 +467,7 @@ button[type="submit"] {
     .my-row {
         margin-left: 25px;
     }
+
     .homeTwoCard {
         padding: 0px;
     }
