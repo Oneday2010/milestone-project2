@@ -40,7 +40,6 @@ body {
 
 }
 
-
 .logoImg {
     width: 30%;
     height: 30%;
@@ -58,6 +57,7 @@ body {
     border-radius: 25px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 
+
 }
 
 #gallaryheading {
@@ -70,77 +70,30 @@ body {
 
 }
 
+/*--gallary cards--*/
 
-/*----------------------------cafe photos*/
-/*With Simple Caption*/
-
-
-.cafePhoto {
-    padding: 20px 0 20px 0;
-    margin-left: 18px;
+.my-row {
+    margin: 20px;
 }
 
-.gallaryPhotos {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
+.my-col {
+    margin: 20px 10px 20px 10px;
+    ;
+    font-family: var(--fontFamily);
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-    border: 5px solid white;
-    position: relative;
+
 }
 
-.gallaryImg {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-.overlay {
-    position: absolute;
-    margin: 30px 10px 20px 10px;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 300px;
-    width: 300px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #fff;
+.test-card {
+    margin-top: 10px;
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-    border: 5px solid white;
 }
 
-.cafePhoto:hover .overlay {
-    opacity: 0.9;
-}
-
-.text {
+.card-body {
     text-align: center;
-    color: #352e24;
-    font-size: 34px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    align-items: center;
-    font-family: inherit;
-
 }
-
-.text:hover {
-    color: #dc3444;
-    text-decoration: none;
-
-
-
-}
-
 
 
 /*----------------------------footer*/
@@ -238,61 +191,7 @@ body {
         margin: 5px;
     }
 
-    .gallary-container {
-        margin: 15% auto;
-        padding: 5px;
-    }
 
-
-    .cafePhoto {
-        margin: 0px;
-
-    }
-
-    .text {
-        font-size: 12px;
-        text-align: center;
-    }
-
-
-    .gallaryPhotos {
-
-        width: 150px;
-        height: 150px;
-        margin: 10px 40px;
-        border-radius: 15px;
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-        border: 5px solid white;
-        position: relative;
-    }
-
-    .overlay {
-        position: absolute;
-        margin: 30px 20px 20px 40px;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 150px;
-        width: 150px;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #fff;
-        border-radius: 15px;
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-        border: 5px solid white;
-    }
-
-
-    #gallaryheading {
-        font-family: 'Poppins', sans-serif;
-        margin-top: 20px;
-        font-size: 180%;
-        font-weight: 500;
-        padding: 20px;
-        text-align: center;
-        color: #352e24;
-    }
 
 
 
@@ -326,50 +225,11 @@ body {
         margin: 5px;
     }
 
+    /*--gallary cards--*/
+
     .gallary-container {
-        margin: 15% auto;
+        margin: 30% 10px;
         padding: 5px;
-    }
-
-
-    .cafePhoto {
-        margin: 0px;
-
-    }
-
-
-    .gallaryPhotos {
-
-        width: 150px;
-        height: 150px;
-        margin: 10px 40px;
-        border-radius: 15px;
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-        border: 5px solid white;
-        position: relative;
-    }
-
-    .text {
-        font-size: 15px;
-        text-align: center;
-    }
-
-
-    .overlay {
-        position: absolute;
-        margin: 30px 20px 20px 40px;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 150px;
-        width: 150px;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #fff;
-        border-radius: 15px;
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-        border: 5px solid white;
     }
 
 
@@ -383,6 +243,13 @@ body {
         color: #352e24;
     }
 
+    .card-body h2 {
+        font-size: 25px;
+    }
+
+    .my-col {
+        margin: 30px 20px 30px 20px;
+    }
 
 
 }
@@ -413,68 +280,36 @@ body {
         margin: 5px;
     }
 
-    .gallary-container {
-        margin: 30% 10px;
-        padding: 5px;
-    }
-
-
-    .cafePhoto {
-        margin: 0px;
-
-    }
-
-
-    .gallaryPhotos {
-
-        width: 250px;
-        height: 250px;
-        margin: 10px 40px;
-        border-radius: 15px;
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-        border: 5px solid white;
-        position: relative;
-    }
-
-    .overlay {
-        position: absolute;
-        margin: 30px 20px 20px 40px;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 250px;
-        width: 250px;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #fff;
-        border-radius: 15px;
-        box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-        border: 5px solid white;
-    }
-
-    .text {
-        font-size: 10px;
-        text-align: center;
-    }
-
+    /*--gallary cards--*/
 
     #gallaryheading {
         font-family: 'Poppins', sans-serif;
-        margin-top: 10px;
-        font-size: 160%;
+        margin-top: 20px;
+        font-size: 180%;
         font-weight: 500;
         padding: 20px;
         text-align: center;
         color: #352e24;
     }
 
-    /* footer */
-    .footer-outer {
+    .gallary-container {
+        margin: 15% auto;
+        padding: 5px;
+    }
+
+
+    .my-row {
+        margin-left: 25px;
+    }
+
+    .homeTwoCard {
         padding: 0px;
     }
 
-    .list-inline {
-        margin: 10px 60px 10px 5px;
+
+
+    .card-body h2 {
+        font-size: 22px;
     }
+
 }
