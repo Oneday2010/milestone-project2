@@ -72,11 +72,11 @@ body {
 
 /*--gallary cards--*/
 .top3-text {
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-style: italic;
     margin-left: 30px;
     font-size: 24px;
-    color:#ef6533 ;
+    color: #ef6533;
 }
 
 h2 {
@@ -86,20 +86,23 @@ h2 {
 .my-row {
     margin: 20px;
 }
+
 h3 {
-  font-size: 120%;  
+    font-size: 120%;
 }
+
 .card-body p {
     font-size: 90%;
 }
 
 .my-col {
     margin: 20px 10px 20px 10px;
-    
+
     font-family: var(--fontFamily);
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
+
 .gallaryPhotos {
     margin-top: 10px;
     border-radius: 10px;
@@ -250,7 +253,7 @@ h3 {
     /*--gallary cards--*/
 
     .gallary-container {
-        margin: 30% 10px;
+
         padding: 5px;
     }
 
@@ -264,13 +267,16 @@ h3 {
         text-align: center;
         color: #352e24;
     }
+    h2 {
+        font-size: 24px;
+    }
 
     .card-body h2 {
         font-size: 25px;
     }
 
     .my-col {
-        margin: 30px 20px 30px 20px;
+        margin: 30px 10px 30px 10px;
     }
 
 
@@ -307,7 +313,7 @@ h3 {
     #gallaryheading {
         font-family: 'Poppins', sans-serif;
         margin-top: 20px;
-        font-size: 180%;
+        font-size: 150%;
         font-weight: 500;
         padding: 20px;
         text-align: center;
@@ -319,6 +325,9 @@ h3 {
         padding: 5px;
     }
 
+h2 {
+    font-size: 18px;
+}
 
     .my-row {
         margin-left: 25px;
