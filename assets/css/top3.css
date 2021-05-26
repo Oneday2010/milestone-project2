@@ -342,5 +342,13 @@ h2 {
     .card-body h2 {
         font-size: 22px;
     }
+     /* footer */
+    .footer-outer {
+        padding: 0px;
+    }
+
+    .list-inline {
+        margin: 10px 60px 10px 5px;
+    }
 
 }
