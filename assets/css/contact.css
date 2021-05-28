@@ -44,6 +44,11 @@ body {
     margin: 5px;
 }
 
+.navbar-collapse {
+    background-color:var(--navbarBgColor); 
+}
+
+
 
 /*--------------------------------------------section*/
 /*----------------------------form*/
