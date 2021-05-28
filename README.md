@@ -227,7 +227,7 @@ I wanted keep in consistence all the images and colour in relate to coffee image
 
 ### Contact
 
-- simple layout for contact form contain with coffee image and user can send  full name and email address as well as message. The form will be sent to my personal email address ( I used emailJS “ www. EmailJS.com" ) and when user sent the form,  user will get the alert that they have sent the message. 
+- simple layout for contact form contain with coffee image and user can send  full name and email address as well as message. The form will be sent to my personal email address ( I used [emailJS](www.emailjs.com) and when user sent the form,  user will get the alert that they have sent the message. 
 
 ### Footer
 
