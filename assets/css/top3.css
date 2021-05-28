@@ -127,11 +127,7 @@ h3 {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
 
-.test-card {
-    margin-top: 10px;
-    border-radius: 15px;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
-}
+
 
 .card-body {
     text-align: center;
@@ -370,4 +366,14 @@ h3 {
         margin: 10px 60px 10px 5px;
     }
 
+}
+
+@media only screen and (max-width: 350px) {
+   .footer-outer {
+        padding: 0px;
+    }
+
+    .list-inline {
+        margin: 10px 40px 10px 5px;
+    }  
 }

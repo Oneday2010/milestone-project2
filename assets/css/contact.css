@@ -327,3 +327,16 @@ img {
 
 
 }
+
+/* --------------------------------------------------------------------mxa-width:350px */
+
+
+@media only screen and (max-width: 350px) {
+   .footer-outer {
+        padding: 0px;
+    }
+
+    .list-inline {
+        margin: 10px 40px 10px 5px;
+    }  
+}
