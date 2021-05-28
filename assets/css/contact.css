@@ -2,7 +2,8 @@
 
 :root {
     --fontFamily: 'Poppins', sans-serif;
-    --bagColor: #352e24;
+    --bodyContainerColor: rgb(252, 243, 233);
+    --navbarBgColor: #362E24;
 }
 
 html {
@@ -22,20 +23,16 @@ body {
 /*--------------------------------------------heading*/
 /*----------------------------nav*/
 .navbar-dark {
-    background-color: #362E24;
+    background-color: var(--navbarBgColor);
 }
 
 .nav-container {
-
     margin: 0px;
     padding: 0px;
-    font-family: var(--fontFamily);
-
-
 }
 
 .nav-text {
-    font-family: var(--fontFamily);
+
     font-weight: 500;
 
 }
@@ -52,7 +49,7 @@ body {
 /*----------------------------form*/
 .cardImageText {
     margin-top: 30px;
-    font-family: var(--fontFamily);
+
 }
 
 .card {
@@ -70,7 +67,7 @@ body {
 
 h5 {
     font-size: 15px;
-    font-family: var(--fontFamily);
+
 }
 
 img {
@@ -95,23 +92,20 @@ img {
 
 
 .boxTest {
-    font-family: var(--fontFamily);
+
     margin: 150px 40px;
-    background-color: rgb(252, 243, 233);
+    background-color: var(--bodyContainerColor);
     padding: 50px;
     height: 100%;
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
 
-.btn {
-    font-family: var(--fontFamily);
-}
 
 
 /*----------------------------footer*/
 .footer-container {
-    background-color: rgb(252, 243, 233);
+     background-color: var(--bodyContainerColor);
 }
 
 .footer-outer {
@@ -128,7 +122,6 @@ img {
     color: #dc3444;
     text-transform: uppercase;
     font-weight: 500;
-    font-family: var(--fontFamily);
     font-size: 1.25rem;
 
 
@@ -190,12 +183,12 @@ img {
     /*----------------------------max-width:768px*/
     /* nav */
     .navbar-dark {
-        background-color: #362E24;
+        background-color: var(--navbarBgColor);
         height: 60px;
     }
 
     .nav-text {
-        font-family: var(--fontFamily);
+
         font-weight: 400;
         font-size: 15px;
 
@@ -220,12 +213,12 @@ img {
 
     /* nav */
     .navbar-dark {
-        background-color: #362E24;
+        background-color: var(--navbarBgColor);
         height: 60px;
     }
 
     .nav-text {
-        font-family: var(--fontFamily);
+
         font-weight: 400;
         font-size: 15px;
 

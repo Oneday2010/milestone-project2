@@ -2,7 +2,8 @@
 
 :root {
     --fontFamily: 'Inter', sans-serif;
-    --bagImgColor: #FFEDCB;
+    --bodyContainerColor: rgb(252, 243, 233);
+    --navbarBgColor: #362E24;
 }
 
 
@@ -11,6 +12,7 @@ html body {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
+    font-family: var(--fontFamily);
 }
 
 /*---------------------------question model*/
@@ -59,7 +61,6 @@ html body {
 .card .card_title {
     text-align: center;
     border-radius: 0px 0px 50px 50px;
-    font-family: var(--fontFamily);
     font-weight: bold;
     font-size: 15px;
     margin-right: 20px;
