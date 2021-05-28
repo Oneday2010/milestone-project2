@@ -9,10 +9,13 @@ function submitMail(contactForm) {
         .then(
             function (response) {
                 console.log("SUCCESS", response);
+                alert("Your message sent successfully", response);
             },
             function (error) {
                 console.log("FAILED", error);
+                alert("Something Went Wrong. Please try again", error);
             }
         );
-    return false; // To block from loading a new page
+    return false; // To block from tloading a new page
+
 }
