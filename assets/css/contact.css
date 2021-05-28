@@ -48,6 +48,9 @@ body {
     background-color:var(--navbarBgColor); 
 }
 
+.navbar-nav {
+    padding-left: 20px;
+}
 
 
 /*--------------------------------------------section*/
