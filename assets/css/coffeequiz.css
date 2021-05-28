@@ -201,8 +201,8 @@
  #scoreContainer p {
      position: absolute;
      display: block;
-     width: 200;
-     height: 200;
+     width: 200px;
+     height: 200px;
      top: 150px;
      left: 300px;
      font-weight: 500;
