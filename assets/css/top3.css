@@ -49,7 +49,7 @@ body {
 }
 
 .navbar-collapse {
-    background-color:var(--navbarBgColor); 
+    background-color: var(--navbarBgColor);
 }
 
 .navbar-nav {
@@ -268,11 +268,15 @@ h3 {
     .gallary-container {
 
         padding: 5px;
+        max-height: 80%;
     }
 
+    .gallaryPhotos {
+        max-height: 300px;
+    }
 
     #gallaryheading {
-        
+
         margin-top: 20px;
         font-size: 180%;
         font-weight: 500;
@@ -339,6 +343,10 @@ h3 {
         padding: 5px;
     }
 
+    .gallaryPhotos {
+        max-height: 300px;
+    }
+
     h2 {
         font-size: 18px;
     }
@@ -356,9 +364,9 @@ h3 {
     .card-body h3 {
         font-size: 18px;
     }
-     
 
-   /* footer */
+
+    /* footer */
     .footer-outer {
         padding: 0px;
     }
@@ -372,6 +380,7 @@ h3 {
 
 
 @media only screen and (max-width: 350px) {
+
     .footer-outer {
         padding: 0px;
     }
