@@ -114,6 +114,7 @@ var suuggestions = {
 
 };
 
+
 // Array to temporary store the values (So the last selection can be deleted in case "BACK" is pressed)
 var selections = [];
 
