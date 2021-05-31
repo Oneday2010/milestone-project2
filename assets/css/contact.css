@@ -45,7 +45,7 @@ body {
 }
 
 .navbar-collapse {
-    background-color:var(--navbarBgColor); 
+    background-color: var(--navbarBgColor);
 }
 
 .navbar-nav {
@@ -62,6 +62,7 @@ body {
 
 .card {
     border: none;
+    background-color: transparent;
 
 }
 
@@ -115,7 +116,7 @@ img {
 
 /*----------------------------footer*/
 .footer-container {
-     background-color: var(--bodyContainerColor);
+    background-color: var(--bodyContainerColor);
 }
 
 .footer-outer {
@@ -241,11 +242,11 @@ img {
         margin: 5px;
     }
 
-       
+
 
     /* section */
     .cardImageText {
-        margin:20px auto;
+        margin: 20px auto;
         padding-left: 20px;
         width: 200px;
         height: 200px;
@@ -322,12 +323,12 @@ img {
 
 
 
-   /* footer */
+    /* footer */
     .footer-outer {
         padding: 0px;
     }
 
-    
+
     .socialmedia-outer {
         margin: 10px auto;
         text-align: center;
