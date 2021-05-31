@@ -348,10 +348,19 @@ p {
     .footer-outer {
         padding: 0px;
     }
+  
+    .socialmedia-outer {
+        margin: 10px auto;
+        text-align: center;
 
-    .list-inline {
-        margin: 10px 60px 10px 5px;
     }
+
+    .pull-right {
+        float: none;
+    }
+
+
+
 }
 
 /* --------------------------------------------------------------------mxa-width:350px */
@@ -362,7 +371,13 @@ p {
         padding: 0px;
     }
 
-    .list-inline {
-        margin: 10px 40px 10px 5px;
+    .socialmedia-outer {
+        margin: 10px auto;
+        text-align: center;
+
+    }
+
+    .pull-right {
+        float: none;
     }
 }
