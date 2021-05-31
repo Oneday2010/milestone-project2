@@ -110,7 +110,7 @@ h3 {
 }
 
 .my-col {
-    margin: 20px 10px 20px 10px;
+    margin: 20px 10px;
     position: relative;
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
@@ -120,6 +120,8 @@ h3 {
     margin-top: 10px;
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    max-height: 300px;
+
 
 }
 
@@ -294,7 +296,7 @@ h3 {
     }
 
     .my-col {
-        margin: 30px 10px 30px 10px;
+        margin: 30px 10px;
     }
 
 
