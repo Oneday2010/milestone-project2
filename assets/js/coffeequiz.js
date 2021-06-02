@@ -1,4 +1,6 @@
-//credit for : https://youtu.be/49pYIMygIcU
+//credit to : https://youtu.be/49pYIMygIcU
+//https://www.codeexplained.org/2018/10/create-multiple-choice-quiz-using-javascript.html
+
 
 // select all elements
 const start = document.getElementById("start");
@@ -14,7 +16,7 @@ const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
 
-// create our questions
+// create coffee questions
 let questions = [{
         question: "The meaning of the term “espresso” is…",
         imgSrc: "assets/images/questions/espresso.png",
