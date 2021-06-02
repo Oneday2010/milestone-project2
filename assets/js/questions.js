@@ -9,7 +9,7 @@ var cafeList = [
         food: "yes",
         sits: "max of 16people",
         address: "<a href ='https://goo.gl/maps/gr5347sZAPWsnuxW6' target ='_blank'> Dublin2 </a>",
-        review: "<a href ='https://mindfulmapping.wordpress.com/2017/06/13/wall-keogh-dublin2/' target ='_blank'>click here <img src ='assets/images/cafesDublin2/wallKeogh.jpg'></a>"
+        review: "<a href ='https://mindfulmapping.wordpress.com/2017/06/13/wall-keogh-dublin2/' target ='_blank'>click here <img class='lastImg' src = 'assets/images/cafesDublin2/wallKeogh.jpg'></a>"
     },
     //2
     {
@@ -17,7 +17,7 @@ var cafeList = [
         food: "no",
         sits: "max of 30people",
         address: "<a href ='https://goo.gl/maps/V1RbJw8A3AQJtcaAA' target ='_blank'> Dublin2 </a>",
-        review: "<a href ='https://mindfulmapping.wordpress.com/2017/06/08/ifi-cafe-bar-dublin2/' target = '_blank'>click here<img src ='assets/images/cafesDublin2/ifi.jpg'></a>"
+        review: "<a href ='https://mindfulmapping.wordpress.com/2017/06/08/ifi-cafe-bar-dublin2/' target = '_blank'>click here<img class='lastImg' src = 'assets/images/cafesDublin2/ifi.jpg'></a>"
     },
     //3
     {
@@ -25,7 +25,7 @@ var cafeList = [
         food: "yes",
         sits: "max of 24people",
         address: "<a href ='https://goo.gl/maps/fSZFFWrZxUuedeJWA' target ='_blank'> Dublin2 </a>",
-        review: "<a href ='https://mindfulmapping.wordpress.com/2017/06/01/fallon-byran/' target = '_blank'>click here<img src ='assets/images/cafesDublin2/fallonandbyrne.jpg'></a>"
+        review: "<a href ='https://mindfulmapping.wordpress.com/2017/06/01/fallon-byran/' target = '_blank'>click here<img class='lastImg' src = 'assets/images/cafesDublin2/fallonandbyrne.jpg'></a>"
     },
 
     //4
@@ -34,7 +34,7 @@ var cafeList = [
         food: "no",
         sits: "max of 28people",
         address: "<a href = 'https://goo.gl/maps/eSJrAaFfZ8HBUFASA' target ='_blank'> Dublin2 </a>",
-        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/06/01/the-pepper-pot-cafe-dublin-2/' target = '_blank'>click here<img src = 'assets/images/ cafesDublin2/pepperpot.jpg'></a>"
+        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/06/01/the-pepper-pot-cafe-dublin-2/' target = '_blank'>click here<img class='lastImg' src = 'assets/images/ cafesDublin2/pepperpot.jpg'></a>"
     },
 
     //5
@@ -43,7 +43,7 @@ var cafeList = [
         food: "yes",
         sits: "max of 34people",
         address: "<a href = 'https://goo.gl/maps/TJG7KFgW6XwTmhwG7' target ='_blank' > Dublin2 </a>",
-        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/05/31/3fe-dublin2/' target = '_blank'>click here<img src ='assets/images/cafesDublin2/3fe.jpg'></a>"
+        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/05/31/3fe-dublin2/' target = '_blank'>click here<img class='lastImg' src = 'assets/images/cafesDublin2/3fe.jpg'></a>"
     },
     //6
     {
@@ -51,7 +51,7 @@ var cafeList = [
         food: "yes",
         sits: "max of 58people",
         address: "<a href = 'https://g.page/twofiftysquare?share' target ='_blank' > Dublin6 </a>",
-        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/07/14/two-fifty-square-dublin-6/' target = '_blank'>click here <img src ='assets/images/ cafesDublin6/twofiftySquare.jpg'></a>"
+        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/07/14/two-fifty-square-dublin-6/' target = '_blank'>click here <img class='lastImg' src = 'assets/images/ cafesDublin6/twofiftySquare.jpg'></a>"
     },
     //7
     {
@@ -59,7 +59,7 @@ var cafeList = [
         food: "yes",
         availability: "max of 16people",
         address: "<a href = 'https://g.page/groveroadcafe?share' target ='_blank'> Dublin6 </a>",
-        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/05/25/grove-road/' target ='_blank'>click here<img src ='assets/images/cafesDublin6/groveroad.jpg'></a>"
+        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/05/25/grove-road/' target ='_blank'>click here<img class='lastImg' src = 'assets/images/cafesDublin6/groveroad.jpg'></a>"
     },
     //8
     {
@@ -67,7 +67,7 @@ var cafeList = [
         food: "yes",
         sits: "max of 18people",
         address: "<a href = 'https://g.page/littlebirdcoffeeyoga?share' target ='_blank'> Dublin8 </a>",
-        review: "< a href = 'https://mindfulmapping.wordpress.com/2017/07/12/little-bird-dublin8/' target ='_blank'>click here <img src ='assets/images/cafesDublin8/littlebird.jpg'></a>"
+        review: "< a href = 'https://mindfulmapping.wordpress.com/2017/07/12/little-bird-dublin8/' target ='_blank'>click here <img class='lastImg' src = 'assets/images/cafesDublin8/littlebird.jpg'></a>"
     },
     //9
     {
@@ -75,7 +75,7 @@ var cafeList = [
         food: "yes",
         sits: "max of 26people",
         address: "<a href = 'https: //g.page/thecakecafedublin?share' target ='_blank'> Dublin8 </a>",
-        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/06/21/the-cake-cafe-dublin8/' target = '_blank'>click here< img src ='assets/images/cafesDublin8/cakecafe.jpg'></a>"
+        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/06/21/the-cake-cafe-dublin8/' target = '_blank'>click here< img class = 'lastImg' src = 'assets/images/cafesDublin8/cakecafe.jpg'></a>"
     },
     //10
     {
@@ -83,7 +83,7 @@ var cafeList = [
         food: "no",
         sits: "max of 38people",
         address: "<a href = 'https://goo.gl/maps/aWXt8BkWDy2t8CCi6' target ='_blank'> Dublin8 </a>",
-        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/06/19/container-coffee-dublin8/' target = '_blank'>click here< img src ='assets/images/cafesDublin8/containercafe.jpg'></a>"
+        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/06/19/container-coffee-dublin8/' target = '_blank'>click here< img src = 'assets/images/cafesDublin8/containercafe.jpg'></a>"
     },
     //11
     {
@@ -91,7 +91,7 @@ var cafeList = [
         food: "yes",
         sits: "max of 54people",
         address: "<a href = 'https://goo.gl/maps/dCL65agvnUPiYAvh7' target ='_blank'> Dublin8 </a>",
-        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/05/26/the-fumbally-dublin8/' target ='_blank'>click here <img src ='assets/images/cafesDublin8/fumbally.jpg'></a>"
+        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/05/26/the-fumbally-dublin8/' target ='_blank'>click here <img class='lastImg' src = 'assets/images/cafesDublin8/fumbally.jpg'></a>"
     },
     //12
     {
@@ -99,14 +99,14 @@ var cafeList = [
         food: "yes",
         sits: "max of 28people",
         address: "<a href = 'https://goo.gl/maps/k5gQa49RUcnMBNKR9' target ='_blank'> Dublin8 </a>",
-        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/05/18/brother-hubbard-south/' target = '_blank'>click here<img src ='assets/images/cafesDublin8/brotherhubbard.jpg '></a>"
+        review: "<a href = 'https://mindfulmapping.wordpress.com/2017/05/18/brother-hubbard-south/' target = '_blank'>click here<img class='lastImg' src = 'assets/images/cafesDublin8/brotherhubbard.jpg '></a>"
     }
 ];
 var suggestions = {
     food: "1,3,5,6,7,8,9",
     dessert: "2,3,4,5,10,11,12",
-    manysits: "1,2,6,7,8,9,11,12",
-    cozy: "2,3,4,5,7,8,10,12",
+    manysits: "2,4,5,6,10,11,12",
+    cozy: "1,3,4,7,8,9,10",
     americano: "1,2,3,4,5,6,8,9",
     cappucino: "1,2,3,4,5,7,9,10,11",
     latte: "2,3,5,6,9,10,11,12",
@@ -264,13 +264,12 @@ function suggest(index) {
         var random = suggested[Math.floor(Math.random() * suggested.length)] - 1;
         document.getElementById("name").innerHTML =
             "<strong></strong>" + cafeList[random].name;
-        document.getElementById("food").innerHTML =
-           " " + cafeList[random].food;
-        document.getElementById("sits").innerHTML =
-             " " + cafeList[random].sits;
-        document.getElementById("address").innerHTML =
-            + " " + cafeList[random].address;
-        document.getElementById("review").innerHTML =
+        document.getElementById("food").innerHTML = 'Food - ' +
+            " " + cafeList[random].food;
+        document.getElementById("sits").innerHTML = 'Sit avaliable - ' +
+            " " + cafeList[random].sits;
+        document.getElementById("address").innerHTML = 'Address - ' + " " + cafeList[random].address;
+        document.getElementById("review").innerHTML = 'Review - ' +
             " " + cafeList[random].review;
 
     }
