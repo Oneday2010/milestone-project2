@@ -17,158 +17,164 @@
 </head>
 
 <body>
+
     <body class="background">
-    
-    <!-- CREDIT for base of button: https://codepen.io/abhishek747/pen/BbWKVa -->
-    <section>
-        <div class="main-btn">
-            <div class="card 1" data-toggle="modal" data-target="#myModal">
-                <div class="card_image"> </div>
-                <div class="main-btn-title">
-                    <h2>let's find out</h2>
+
+        <!-- CREDIT for base of button: https://codepen.io/abhishek747/pen/BbWKVa -->
+        <section>
+            <div class="startBtn">
+                <div class="startCard" data-toggle="modal" data-target="#myModal">
+
+                    <div class="card_image">
+                        <img class="startImg" src="assets/images/questions/cafewithChair.png" alt="table and chair">
+                        <p>Which is ?</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Modal -->
-        <!-- CREDIT for modal: https://codepen.io/Ayn_/pen/vmVKZV -->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true">&times;</span></button>
-                    </div>
-                    <div class="modal-body">
-                        <!-- Modal page 1 -->
-                        <div class="modal-split">
-                            <h3>pick your cafe</h3>
-                            <div class="radio-group row justify-content-between px-3 text-center a">
-                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="food">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid"
-                                                    src="assets/images/questions/breakfast.jpg" alt="food" width="150"
-                                                    height="150"> </div>
-                                            <p>food</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="dessert">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid"
-                                                    src="assets/images/questions/coffeeandcake.jpg" alt="dessert"
-                                                    width="150" height="150">
+            <!-- Modal -->
+            <!-- CREDIT for modal: https://codepen.io/Ayn_/pen/vmVKZV -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Modal page 1 -->
+                            <div class="modal-split">
+                                <h3>pick your cafe</h3>
+                                <div class="radio-group row justify-content-between px-3 text-center a">
+                                    <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
+                                        data-suggest="food">
+                                        <div class="flex-row">
+                                            <div class="col">
+                                                <div class="pic"> <img class="irc_mut img-fluid"
+                                                        src="assets/images/questions/breakfast.jpg" alt="food"
+                                                        width="150" height="150"> </div>
+                                                <p>food</p>
                                             </div>
-                                            <p>desert</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
+                                        data-suggest="dessert">
+                                        <div class="flex-row">
+                                            <div class="col">
+                                                <div class="pic"> <img class="irc_mut img-fluid"
+                                                        src="assets/images/questions/coffeeandcake.jpg" alt="dessert"
+                                                        width="150" height="150">
+                                                </div>
+                                                <p>desert</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Modal page 2 -->
-                                              
-                        <div class="modal-split">
-                            <h3>what type of cafe?</h3>
-                            <div class="radio-group row justify-content-between px-3 text-center a">
-                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio" data-suggest="manysits">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid" src="assets/images/questions/manysitscafe.jpg"
-                                                    alt="low budget" width="150" height="150"> </div>
-                                            <p>manysits</p>
+                            <!-- Modal page 2 -->
+
+                            <div class="modal-split">
+                                <h3>what type of cafe?</h3>
+                                <div class="radio-group row justify-content-between px-3 text-center a">
+                                    <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
+                                        data-suggest="manysits">
+                                        <div class="flex-row">
+                                            <div class="col">
+                                                <div class="pic"> <img class="irc_mut img-fluid"
+                                                        src="assets/images/questions/manysitscafe.jpg" alt="low budget"
+                                                        width="150" height="150"> </div>
+                                                <p>manysits</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="cozy">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid" src="assets/images/questions/cozycafe.jpg"
-                                                    alt="medium budget" width="150" height="150"> </div>
-                                            <p>cozy</p>
+                                    <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
+                                        data-suggest="cozy">
+                                        <div class="flex-row">
+                                            <div class="col">
+                                                <div class="pic"> <img class="irc_mut img-fluid"
+                                                        src="assets/images/questions/cozycafe.jpg" alt="medium budget"
+                                                        width="150" height="150"> </div>
+                                                <p>cozy</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <!-- Modal page 3 -->
-                        <div class="modal-split">
-                            <h3>what type of coffee</h3>
-                            <div class="radio-group row justify-content-between px-3 text-center a">
-                                <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="americano">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid"
-                                                    src="assets/images/questions/americano.png" alt="Meat-eater" width="150"
-                                                    height="150"> </div>
-                                            <p>americano</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="cappucino">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid"
-                                                    src="assets/images/questions/cappuccino.png" alt="Vegetarian" width="150"
-                                                    height="150"> </div>
-                                            <p>cappucino</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
-                                    data-suggest="latte">
-                                    <div class="flex-row">
-                                        <div class="col">
-                                            <div class="pic"> <img class="irc_mut img-fluid" src="assets/images/questions/latte.png"
-                                                    alt="Vegan" width="150" height="150"> </div>
-                                            <p>latte</p>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
-                        </div>
-                        <!-- Modal page 4 result-->
-                        <div class="modal-split">
-                            <h3 id="name">Name</h3>
-                            <div class="row">
-                                <div class="text col-12 col-lg-6">
-                                    <p id="food">food</p>
-                                    <p id="sits">sits</p>
-                                    <p id="address">address</p>
-                                    <p id="review">review</p>
+                            <!-- Modal page 3 -->
+                            <div class="modal-split">
+                                <h3>what type of coffee</h3>
+                                <div class="radio-group row justify-content-between px-3 text-center a">
+                                    <div class="col-auto mr-sm-2 mx-1 card-block py-0 text-center radio"
+                                        data-suggest="americano">
+                                        <div class="flex-row">
+                                            <div class="col">
+                                                <div class="pic"> <img class="irc_mut img-fluid"
+                                                        src="assets/images/questions/americano.png" alt="Meat-eater"
+                                                        width="150" height="150"> </div>
+                                                <p>americano</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
+                                        data-suggest="cappucino">
+                                        <div class="flex-row">
+                                            <div class="col">
+                                                <div class="pic"> <img class="irc_mut img-fluid"
+                                                        src="assets/images/questions/cappuccino.png" alt="Vegetarian"
+                                                        width="150" height="150"> </div>
+                                                <p>cappucino</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto ml-sm-2 mx-1 card-block py-0 text-center radio"
+                                        data-suggest="latte">
+                                        <div class="flex-row">
+                                            <div class="col">
+                                                <div class="pic"> <img class="irc_mut img-fluid"
+                                                        src="assets/images/questions/latte.png" alt="Vegan" width="150"
+                                                        height="150"> </div>
+                                                <p>latte</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                               
                             </div>
+                            <!-- Modal page 4 result-->
+                            <div class="modal-split">
+                                <h3 id="name">Name</h3>
+                                <div class="row">
+                                    <div class="text col-12 col-lg-6">
+                                        <p id="food">food</p>
+                                        <p id="sits">sits</p>
+                                        <p id="address">address</p>
+                                        <p id="review">review</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
                         </div>
 
-                    </div>
-
-                    <div class="modal-footer">
-                        <!--Nothing Goes Here but is needed! -->
+                        <div class="modal-footer">
+                            <!--Nothing Goes Here but is needed! -->
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
 
 
-    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-    </script>
-    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
-    <script src="assets/js/questions.js"></script>
+        <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+        </script>
+        <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+        <script src="assets/js/questions.js"></script>
 
-</body>
+    </body>
 
 </html>
