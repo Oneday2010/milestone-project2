@@ -37,7 +37,7 @@ body {
 .startCard {
 
     background-color: rgba(252, 249, 249, 0.959);
-    margin: 30% auto;
+    margin: 10% auto;
     padding: 20px;
     max-width: 180px;
     max-height: 200px;
@@ -166,22 +166,43 @@ body {
     box-shadow: none !important
 }
 
+/* Modal page 4 result */
 #name {
     font-size: 300%;
     font-weight: 700;
     color: #dc3444;
     text-shadow: 2px 2px #f3cbcf;
+     margin: 20px;
 }
 
 .text {
-    font-size: 150%;
+    font-size: 120%;
     font-weight: 500;
 }
 
 .lastImg {
-    width: 100px;
-    height: 100px;
+
+    width: 150px;
+    height: 150px;
     margin: 20px;
     border-radius: 14px;
+}
+
+/*---------------------------------------------------------------------------------------Media Queries-max-width:768px*/
+
+
+
+/* --------------------------------------------------------------------mxa-width:600px */
+
+@media only screen and (max-width: 600px) {
+
+#name {
+    font-size:200%;
     
+}
+ .text {
+    font-size: 110%;
+   
+}
+
 }
