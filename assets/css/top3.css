@@ -116,6 +116,10 @@ h3 {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
 }
 
+.my-col:hover {
+      transform: scale(0.93, 0.99);
+}
+
 .gallaryPhotos {
     margin-top: 10px;
     border-radius: 10px;
