@@ -48,6 +48,7 @@ It is a specialist Dublin cafe review website that is intended to be accessible 
 
 
 ## UX
+
 ### User experience
 ---
 
@@ -116,7 +117,7 @@ As Regular User:
 
 
 
-### structure
+### Structure
 ---
 
 I decided to separate the website into four sections- the home page, cafes, top3, contact pages. Moreover, there are coffee quiz and search form to interacted with user. The navbar and footer (both fixed) allow the user to easily find ways to get in touch and each page is to show a consistency throughout. Each page is designed to provide practical information, reliable linked and related real images and content enough to enable the user to know what the website provides. 
@@ -125,6 +126,7 @@ I decided to separate the website into four sections- the home page, cafes, top3
 
 
 ### Skeleton
+---
 
 The website is divided into the mainly four section and additional one  each quiz&search form as well as three additional pages on cafe pages by Dublin2,Dublin6,Dublin8. Most of contents are match with my frame work, however, I made many change through the project such as each pages layout and additional pages ( quiz and search form).I added extra framework after . I replace top3page which originally gallery page was. Try to avoid repeating same information in different page. 
  
@@ -164,7 +166,7 @@ This website have eight pages. The wireframes do not match with my final projext
 
 
 ### Surface
-—
+—--
 
 I wanted keep in consistence all the images and colour in relate to coffee image. Most of images from myself took from actually cafe which I reviewed, colour tones got inspired from Adobe [Adobe color](https://color.adobe.com/search?q=coffee) and [Colorspace](https://mycolor.space/?hex=%23352E24&sub=1) for colour match. Some illustration work on myself to match colour tone with website. Most of containers and images got border shadows to look more 3D visual effect. 
 
@@ -199,43 +201,42 @@ I wanted keep in consistence all the images and colour in relate to coffee image
 
 ### Navbar
 
-- There are navbar fixed on the top all the webpages to give user better accessibly and navigate the website easily. 
+ - There are navbar fixed on the top all the webpages to give user better accessibly and navigate the website easily. 
 
-- Use dark background color and bright text to catch visiter’s eyes easily. On a mobile or table, the navbar is then collapsed to show hamburger icon which expands when clicked to display the other pages. 
+ - Use dark background color and bright text to catch visiter’s eyes easily. On a mobile or table, the navbar is then collapsed to show hamburger icon which expands when clicked to display the other pages. 
 
-- The user can click on the logo or navbar band to take the user back to the homepage. 
+ - The user can click on the logo or navbar band to take the user back to the homepage. 
 
 ### Home
 
-- The top of homepage, there are slideshow used ‘ bootstrap4 carousel ’, use 4 different cafe images with welcoming text and real cafe image with cafe name on it.  Try to send message that what this website is about. 
+ - The top of homepage, there are slideshow used ‘ bootstrap4 carousel ’, use 4 different cafe images with welcoming text and real cafe image with cafe name on it.  Try to send message that what this website is about. 
 
-- Under the slideshow, there are two image with short text come with links. First one is lined with my personal blog that contain all cafe reviews. And second image linked to simple coffee quiz that interacted with user and increase interest about the website. 
+ - Under the slideshow, there are two image with short text come with links. First one is lined with my personal blog that contain all cafe reviews. And second image linked to simple coffee quiz that interacted with user and increase interest about the website. 
 
-- Under the two image card, there are map ( use google map API).Beside the map there is list of each cafes name written on map. It also linked the review paged on my personal cafe review blog. 
+ - Under the two image card, there are map ( use google map API).Beside the map there is list of each cafes name written on map. It also linked the review paged on my personal cafe review blog. 
 
-- Under the map, there is newsletter form that invite the user to sign up to the icoffeemap’s newsletter. 
+ - Under the map, there is newsletter form that invite the user to sign up to the icoffeemap’s newsletter. 
 
-### cafes
+### cafes (Dublin 2,6,8)
 
-#### Dublin 2,6,8
-
-- when user click the Cafes it shows three option as Dublin2,6,8. When user click the Dublin 2, the pages shows 5 cafes reviews.There are cafes image with moving card contain short review with link button inside image. Use  card hover effect to give better motion on the pages. In Dublin 6, there is two cafe images and same card hover effect. Same effect on Dublin 8 with 5 cafes image. Try to minimised the layout and appearance of pages to give clear idea of website and focus on user interaction with card hover effect. 
+ - when user click the Cafes it shows three option as Dublin2,6,8. When user click the Dublin 2, the pages shows 5 cafes reviews.There are cafes image with moving card contain short review with link button inside image. Use  card hover effect to give better motion on the pages. In Dublin 6, there is two cafe images and same card hover effect. Same effect on Dublin 8 with 5 cafes image. Try to minimised the layout and appearance of pages to give clear idea of website and focus on user interaction with card hover effect. 
 
 ### Top3
 
-- this page is top3 suggestion of different category cafe.  Three cafes are  ranked with my personal opinion.  The purpose of the page is that user can reduce the searching time, instantly decide what they look for. I use simple hover effect when mouse move on each row to give friendly interaction with user.
+ - this page is top3 suggestion of different category cafe.  Three cafes are  ranked with my personal opinion.  The purpose of the page is that user can reduce the searching time, instantly decide what they look for. I use simple hover effect when mouse move on each row to give friendly interaction with user.
 
 ### Contact
 
-- simple layout for contact form contain with coffee image and user can send  full name and email address as well as message. The form will be sent to my personal email address ( I used [emailJS](www.emailjs.com) and when user sent the form,  user will get the alert that they have sent the message. 
+ - simple layout for contact form contain with coffee image and user can send  full name and email address as well as message. The form will be sent to my personal email address ( I used [emailJS](www.emailjs.com) and when user sent the form,  user will get the alert that they have sent the message. 
 
 ### Footer
 
-- footer allocated bottom of each page, So when user finished scroll down, they always expected to see the footer. Footer is contained about which linked the about page on my personal blog explain about the cafe review and beside the about, there are social media links . So they will be help to get extra information about the website and user can find another way to communicate with icoffeemap website. 
+ - footer allocated bottom of each page, So when user finished scroll down, they always expected to see the footer. Footer is contained about which linked the about page on my personal blog explain about the cafe review and beside the about, there are social media links . So they will be help to get extra information about the website and user can find another way to communicate with icoffeemap website. 
 
 
 
-* ## Existing Features
+## Existing Features
+---
 
 There are many existing cafe review website in online. I wanted to create  website that simple and easy to find the info as well as having some fun with it too. My website have two big section as functionally . One is offer cafe information and recommend the cafes. Second is interacting with  user through coffee quiz and search form.  
 
@@ -270,18 +271,20 @@ There are three quizs with timer function and progess bar and shows the correct 
 
 
 
-* ## Features left to implement
+## Features left to implement
+---
 
-- There are many function can be improve. For instance, it would be better that there are search bar on the right corer of navbar, so user can easily search regardless cafe name or location. 
+ - There are many function can be improve. For instance, it would be better that there are search bar on the right corer of navbar, so user can easily search regardless cafe name or location. 
 
-- As increase of popularity and user traffic, it would be good idea to put dark mode that user can easier to read on their device.
+ - As increase of popularity and user traffic, it would be good idea to put dark mode that user can easier to read on their device.
 
-- More cafe lists need to update and exiting cafe review list should be up-to date information to be service as possible as accurate information.
+ - More cafe lists need to update and exiting cafe review list should be up-to date information to be service as possible as accurate information.
 
 
  
 
 ## Technologies
+
 ### Technologies Used
 ---
 
@@ -323,7 +326,7 @@ There are three quizs with timer function and progess bar and shows the correct 
  - [ChromeDevTools](https://developer.chrome.com/docs/devtools/)- Used eachtime when I check error/issue on my site.
  - [W3Schools](https://www.w3schools.com/js/default.asp) - often use for css and javascript code tips
  - [AmIResponsive](http://ami.responsivedesign.is/) - Used to check how the layout of the website looks across different devices.
- - [BrowserStack](https://www.browserstack.com/) - Used to test website layout on multiple devices
+ - [responsinator](http://www.responsinator.com/?url=https://oneday2010.github.io/milestone-project2/) - Used to test website layout on multiple devices
  - [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly) - Used to test all pages on a mobile device
  - [Adobe color](https://color.adobe.com/search?q=coffee) - Used to find right color pattern for my website
  - [Colorspace](https://mycolor.space/?hex=%23352E24&sub=1) - Used to find right color pattern for my website
@@ -446,19 +449,45 @@ This bug occured on tablet view. I add min-width 250 and with media quary I add 
 
   ![bug3](assets/docs/images/bug/bug3.png)
 
- On question.js, the suggested (model4) was keep shows on all the options below, I relised that I 
+ On question.js, the suggested (model4) was keep shows on bottom of question , I relised that I made mistake on speling (model-split->modal-split). Fixed.
 
   - bug4
 
-  All the images was too big size, it delayed loading time. My montor advised me to compress all the image size. I used [this site]((https://tinyjpg.com/)) to compress all the iamges and test on my old laptop. it loads faster than before.
+  ![bug4](assets/docs/images/bug/bug4.png)
+
+  On question.js, function didn't work and it show error and I relised that suggestions should be more option to fit the function requirement. Becaues there are  only 12 objects, some of options doesn't fit with suggestion. I add more cafes on suggestions, so function has more flexiblity to run. 
 
 
-  
-  
+  - bug5
+
+  All the images had big size, it delayed loading time. My montor advised me to compress all the image size. I used [this site]((https://tinyjpg.com/)) to compress all the images and test on my old laptop. it loads faster than before.
+
+ 
   
 ### Testing User Stories from User Experience (UX) section
 
- - Testing user story goal
+ #### Testing user story goal
+
+  * ##### As as First Time User:
+
+“ There are so many cafes in my area, I don’t have time and money to check all the place, I want to find right cafe for me when I need to grab a nice cup of coffee”
+
+“ As crazy coffee lover, I want to find right cafe where serves  good coffee  and unique taste and new experience.”
+
+“ I don’t know about coffee but I love to having nice brunch with my family on my weekend. I want to find nice cafe with food and good space to enjoy my weekend.”
+
+“ Sometime I want to have nice treat for myself with delicious dessert and nice coffee in cozy cafe near by my place”
+
+  * ##### As Regular User:
+
+“ I know good place for coffee, I want to try best cafe for food and dessert too”
+
+“Due to Covid situation, I don’t go far from my area, I love to discover nice cafe around my area and experience  according to reviews”
+
+“ This recommended cafe list need to get updates in my area as there are new cafes open recently. As long as there are more cafes I can search I’ll return.”
+
+“ As a regular user, I want to see other cafe reviews in other area in Ireland. I sometime need to go other place far from my area, want to check out nice cafe there too.”
+
 
 
 ## Deployment
@@ -479,17 +508,38 @@ This bug occured on tablet view. I add min-width 250 and with media quary I add 
 ---
 * ### Content
 
-Most of contents are original from myself. However, there are coding help from Code institute course User Centric Frontend Development -> resume-miniproject-bootstrap4. 
-Especially "Work history"/"My Skill" from the course were great help.  I got many good idea from [w3school](https://www.w3schools.com/html/html5_semantic_elements.asp).
+ 1) Most of contents from my origial [cafe blog](https://mindfulmapping.wordpress.com/)
+
+ 2) For the carousel I got huge help from [bootstrap](https://getbootstrap.com/docs/4.0/components/carousel/)
+
+ 3) for the map and email javascript code got help from [codeinstitute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/3b2af8636ea54a4d9dc45126f7498633/) / 
+   [codeinstitute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+IFD101+2017_T3/courseware/03d3f6524ad249d9b33e3336d156dfd0/e4710f80cdf34bffbd607bc102482d5c/)
+ 
+ 4) For Find the cafe questions form got help from [rudgerga](https://github.com/rudberga/CI-MS2-inspiry-tokyo) / [codepen](https://codepen.io/Ayn_/pen/vmVKZV)
+ 
+ 5) For Coffee quiz form got help from [Youtube](https://youtu.be/49pYIMygIcU) / [Code Explained](https://www.codeexplained.org/2018/10/create-multiple-choice-quiz-using-javascript.html)
+ 
+ 6) most of cards effect got idea from [codepen](https://codepen.io/kw7oe/pen/mPeepv)
+ 
+ 7) coffeequiz questions got idea from [BuzzFeed](https://www.buzzfeed.com/jasminsuknanan/coffee-knowledge-quiz) and [welovequizzes](https://www.welovequizzes.com/coffee-quiz-questions-and-answers/)
 
 
 * ### Media
 
-All the image files I got from "https://pixabay.com/"
-there are three images I used this site
-1) [Home background image]( https://pixabay.com/photos/laptop-desk-workspace-workplace-336373/)
-2) [About girl](https://pixabay.com/illustrations/watercolor-portrait-character-girl-1020509/)
-3) [Contact](https://pixabay.com/photos/student-typing-keyboard-text-woman-849822/)
+  most of cafe images origin by me. and there are images I used I referenced below
+
+1) [coffeeContact](https://pixabay.com/illustrations/coffee-cafe-cup-kitchen-restaurant-3179847/)
+2) logo created by myself I used this tool [logo](https://www.canva.com/design/DACVY478Beo/pnXH0TrN-rfMASjJTTaN2A/edit)
+3) [cafeimages-cafe](https://pixabay.com/photos/cafe-restaurant-bar-people-tables-768771/)
+4) [coffeehouse](https://pixabay.com/photos/coffeehouse-bar-shop-cafe-espresso-2600877/)
+5) [holdingcoffee](https://pixabay.com/photos/hands-coffee-hold-holding-1283917/)
+6) [pourover](https://pixabay.com/photos/coffee-brew-caffeine-coffee-making-984328/)
+7) [coffeequiz-americano,latte,capuccino...](https://pixabay.com/illustrations/coffee-varieties-vector-4996650/)
+8) [coffeeface](https://pixabay.com/illustrations/coffee-cup-mug-routine-2896942/)
+9) [breakfast](https://pixabay.com/photos/breakfast-food-dish-1246686/)
+10) [coffeecake](https://pixabay.com/photos/coffee-cup-beverage-cappuccino-2439999/)
+11) [cafewithchair](https://pixabay.com/illustrations/outdoor-table-and-chairs-4290642/)
+12) [manysits](https://pixabay.com/photos/people-restaurant-coffee-shop-2591838/)
 
 
 
@@ -499,12 +549,6 @@ I received inspiration for this project from
 
 1) [Code institute](https://learn.codeinstitute.net/ci_program/diplomainsoftwaredevelopment)
 
-User Centric Frontend Development-> mini project ( Resume)
+2) I got great help from elerel's [readme reference](https://github.com/elerel/ms1-go2snow/blob/master/README.md#overview)
 
-2) Code institute->CSS Essentials->Love Running
-
-3) Code institute->User Centric Frontend Development->Bootstrap4->Whiskey Drop 
-
-4) I got great help from elerel's [readme reference](https://github.com/elerel/ms1-go2snow/blob/master/README.md#overview)
-
-5) My Mentor,Nishant Kumar, and many tutors(Jo,Alan,Scott,Tim) gave me great help throughout this project.
+3) My mentor Nishant Kumar's support give me great help and Thanks to my tutors. 
