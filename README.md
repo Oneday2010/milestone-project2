@@ -337,10 +337,6 @@ There are four quizs with timer function and progess bar and shows the correct a
 ## Testing 
 ---
 
-
-comment
-
-
  - Forms testing: 
  
 There are two section to form test. First one is getting users information form such as ‘newsletter’ and ‘Contact’. Moreover, there are two quiz form such as ‘Find your cafe( questions)’ and ‘coffee quiz’. To ensure the website was functioning as it should, I tested each of forms on different devices and browsers. 
@@ -348,14 +344,10 @@ There are two section to form test. First one is getting users information form 
 1. Newsletter
 This form is basically asking visiter to sign up for new update as registering their email. There are email input box and send button on the below. When user input their email address, I got the data through my email account which I register on ‘emailjs’ 
 
-    texting form data used the [link](https://www.emailjs.com)
-
-Also, after user submit the email, there are confirm popup on window that confirmation message to user that the data sent successfully. 
+    texting form data used the [link](https://www.emailjs.com). Also, after user submit the email, there are confirm popup on window that confirmation message to user that the data sent successfully. 
 
 2. Contact
-This form is required three section to filled up to submit and optional message. When user submit the info with submit button, the data come to my registered account and show confirmed message on windows popup. 
-
-texting form data used the [link](https://www.emailjs.com).
+This form is required three section to filled up to submit and optional message. When user submit the info with submit button, the data come to my registered account and show confirmed message on windows popup. Texting form data used the [link](https://www.emailjs.com).
 
 
  ![form test - newsletter](assets/docs/images/form-test/formTest-newletter.png)
@@ -366,20 +358,15 @@ texting form data used the [link](https://www.emailjs.com).
 
 3. Find your cafe(questions)
 
-User can find the this form button on home page inside carousel. When the button clicked there is new window open and one with start button and three questions boxes and result box at last. This form is contain close button on the right corner of each boxes and options button with ‘Next’’Back’’Finish’ as user can navigate the questions as their desire. 
-
-Credit to [this link](https://github.com/rudberga/CI-MS2-inspiry-tokyo).
+User can find the this form button on home page inside carousel. When the button clicked there is new window open and one with start button and three questions boxes and result box at last. This form is contain close button on the right corner of each boxes and options button with ‘Next’’Back’’Finish’ as user can navigate the questions as their desire. Credit to [this link](https://github.com/rudberga/CI-MS2-inspiry-tokyo).
 
 Each button tested and all button works as it was designed for. Originally it supposed popup inside my home page. I made separate page to do the question form. The reason is there are many function on home page inclues slideshow, coffee quiz and map etc.I want to more clear and less traffic on one page.
 
 4.  Coffeequiz
-This form is asking user four questions about coffee and shows the score base on the users have tested. There are thirteen buttons all together. First one with start button and three option buttons each with four questions. I tested all and work. The quiz contained with timer and four counters with is working according the code. The result shows with percentage works with counters and the image and comments change according to the percentage. All works. 
 
-Credit to [this link](https://www.codeexplained.org/2018/10/create-multiple-choice-quiz-using-javascript.html)
+This form is asking user four questions about coffee and shows the score base on the users have tested. There are thirteen buttons all together. First one with start button and three option buttons each with four questions. I tested all and work. The quiz contained with timer and four counters with is working according the code. The result shows with percentage works with counters and the image and comments change according to the percentage. All works.  Credit to [this link](https://www.codeexplained.org/2018/10/create-multiple-choice-quiz-using-javascript.html)
 
- 
-
- - Links : [responsinator](http://www.responsinator.com/?url=https://oneday2010.github.io/milestone-project2/)
+ - Links : 
  Testing across various devices ( I used [responsinator](http://www.responsinator.com/?url=https://oneday2010.github.io/milestone-project2/) as well as my one device and friends. the devices blows works without issue
 
  - Mobiles/tablet/laptop
@@ -428,7 +415,7 @@ Credit to [this link](https://www.codeexplained.org/2018/10/create-multiple-choi
 
 
 
-#### project bug and solution
+#### Project bug and solution
 
   - bug1
 
