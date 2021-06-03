@@ -334,43 +334,73 @@ There are three quizs with timer function and progess bar and shows the correct 
 
 ## Testing 
 ---
-* ### Testing User Stories from User Experience (UX) section
 
- - Testing user story goal
 
 comment
 
 
  - Forms testing: 
+ 
+There are two section to form test. First one is getting users information form such as ‘newsletter’ and ‘Contact’. Moreover, there are two quiz form such as ‘Find your cafe( questions)’ and ‘coffee quiz’. To ensure the website was functioning as it should, I tested each of forms on different devices and browsers. 
 
-texting form data used the [link](https://www.emailjs.com)
+1. Newsletter
+This form is basically asking visiter to sign up for new update as registering their email. There are email input box and send button on the below. When user input their email address, I got the data through my email account which I register on ‘emailjs’ 
+
+    texting form data used the [link](https://www.emailjs.com)
+
+Also, after user submit the email, there are confirm popup on window that confirmation message to user that the data sent successfully. 
+
+2. Contact
+This form is required three section to filled up to submit and optional message. When user submit the info with submit button, the data come to my registered account and show confirmed message on windows popup. 
+
+texting form data used the [link](https://www.emailjs.com).
+
+
+ ![form test - newsletter](assets/docs/images/form-test/formTest-newletter.png)
+ ![form test - contact](assets/docs/images/form-test/formTest-contact.png)
+ ![form test - newsletter email](assets/docs/images/form-test/formTest-newsletter-email.png)
+ ![form test - contact email](assets/docs/images/form-test/formTest-contact-email.png)
+ 
+
+3. Find your cafe(questions)
+
+User can find the this form button on home page inside carousel. When the button clicked there is new window open and one with start button and three questions boxes and result box at last. This form is contain close button on the right corner of each boxes and options button with ‘Next’’Back’’Finish’ as user can navigate the questions as their desire. 
+
+Credit to [this link](https://github.com/rudberga/CI-MS2-inspiry-tokyo).
+
+Each button tested and all button works as it was designed for. Originally it supposed popup inside my home page. I made separate page to do the question form. The reason is there are many function on home page inclues slideshow, coffee quiz and map etc.I want to more clear and less traffic on one page.
+
+4.  Coffeequiz
+This form is asking user four questions about coffee and shows the score base on the users have tested. There are thirteen buttons all together. First one with start button and three option buttons each with four questions. I tested all and work. The quiz contained with timer and four counters with is working according the code. The result shows with percentage works with counters and the image and comments change according to the percentage. All works. 
+
+Credit to [this link](https://www.codeexplained.org/2018/10/create-multiple-choice-quiz-using-javascript.html)
 
  
 
- ![form test](assets/docs/images/)
- - Links : 
+ - Links : [responsinator](http://www.responsinator.com/?url=https://oneday2010.github.io/milestone-project2/)
+ Testing across various devices ( I used [responsinator](http://www.responsinator.com/?url=https://oneday2010.github.io/milestone-project2/) as well as my one device and friends. the devices blows works without issue
 
-
- - Testing across various devices ( I used Browser Stack as well as my one device and friends. the devices blows works without issue, however, I found some issue with very old version of device from BrowerStack such as iphone 5. I edit media queries, it worked better )
-   * Android mobile: Galaxy s9
-                     oneplus 8
-                     pixel4
-   * IOS mobile:iPhone 11, 6s,12,12pro
-   * IOS table:ipad pro 2017 ,
-   *  Android tablet : Samsung galaxy tob s6
-   * laptop:macbook 13inch 2014
-
-
-
-
+ - Mobiles/tablet/laptop
+   * iPhone eXpensive portrait · width: 375px                 
+   *  Android (Pixel 2) portrait · width: 412px
+   * Android (Pixel 2) landscape · width: 684px
+   * iPhone 6-8 Plump portrait · width: 414px
+   * iPhone 11
+   * iPad portrait · width: 768px:
+   * MacBook 13inch 2014
+   * MacBOOK 13inch 2019
 
 
 
  - Ensured the website was also responsive on all the pages [Google Mobile Friendly Test](https://search.google.com/test/mobile-friendly?utm_source=gws&utm_medium=onebox&utm_campaign=suit) 
-   - Home ![HOME](assets/docs/images/)
-   - About ![ABOUT](assets/docs/images/)
-   - Resume ![RESUME](assets/docs/images/)
-   - Contact![CONTACT](assets/docs/images/)
+   - Home ![mobile friendly test - Home](assets/docs/images/form-test/mobileTest-home.png)
+   - Dublin 2  ![mobile friendly test - Dublin2](assets/docs/images/form-test/mobileTest-dublin2.png)
+   - Dublin 6 ![mobile friendly test - Dublin6](assets/docs/images/form-test/mobileTest-dublin6.png)
+   - Dublin 8  ![mobile friendly test - Dublin8](assets/docs/images/form-test/mobileTest-dublin8.png)
+   - Top3  ![mobile friendly test - Top3](assets/docs/images/form-test/mobileTest-top3.png)
+   - Contact ![mobile friendly test - Contact](assets/docs/images/form-test/mobileTest-contact.png)
+   - Questions  ![mobile friendly test - Questions](assets/docs/images/form-test/)mobileTest-questions.png)
+   - Coffeequiz ![mobile friendly test - Coffeequiz](assets/docs/images/form-test/mobileTest-coffeequiz.png)
  
   - I tested on Safari,Chrome, Firefox it was performed without issue. 
 
@@ -379,19 +409,17 @@ texting form data used the [link](https://www.emailjs.com)
 
  #### Validation
  - [W3C Markup Validator](https://validator.w3.org/) : 
- comments
 
- ![W3C Markup Validator](assets/docs/images/
+ All pages have no issue found.
 
- There was no further issues.
+ ![W3C Markup Validator](assets/docs/images/form-test/w3c-validator.png)
+
+
 
  - [W3C CSS Vaildator](https://jigsaw.w3.org/css-validator/) 
- ![W3C CSS Validator](assets/docs/images/)
- ![W3C CSS Validator](assets/docs/images/)
 
-
-
-
+  All pages have no issue found.
+ ![W3C CSS Validator](assets/docs/images/form-test/css-validator.png)
 
 
 
@@ -413,8 +441,11 @@ texting form data used the [link](https://www.emailjs.com)
 comment
 
   - comment
+  
+  
+#### Testing User Stories from User Experience (UX) section
 
-
+ - Testing user story goal
 
 
 ## Deployment

@@ -114,6 +114,7 @@ h3 {
     position: relative;
     border-radius: 15px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+    min-width: 250px;
 }
 
 .my-col:hover {
@@ -236,11 +237,7 @@ h3 {
     }
 
 
-
-
-
 }
-
 
 
 /*---------------------------------------------------------------------------------------Media Queries-max-width:768px*/
