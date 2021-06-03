@@ -297,7 +297,8 @@ h3 {
     }
 
     .my-col {
-        margin: 30px 10px;
+        margin: 10px 5px;
+        min-width: 200px;
     }
 
 
@@ -389,7 +390,6 @@ h3 {
 }
 
 /* --------------------------------------------------------------------mxa-width:350px */
-
 
 @media only screen and (max-width: 350px) {
     .footer-outer {

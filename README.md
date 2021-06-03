@@ -132,35 +132,35 @@ The website is divided into the mainly four section and additional one  each qui
 This website have eight pages. The wireframes do not match with my final projext exactly, however, I can say almost as planed. 
  - Landing Page: welcoming page
  
-![HOME](assets/docs/images/wireframe-home.png)
+![HOME](assets/docs/images/wireframe/wireframe-home.png)
 
  - Coffeequiz
 
-![COFFEEQUIZ](assets/docs/images/wireframe-coffeequiz.png)
+![COFFEEQUIZ](assets/docs/images/wireframe/wireframe-coffeequiz.png)
 
  - Question ( to search and get result)
 
-![QUESTION](assets/docs/images/wireframe-question.png)
+![QUESTION](assets/docs/images/wireframe/wireframe-question.png)
 
  - Dublin2 cafes
  
-![DUBLIN2](assets/docs/images/wireframe-dublin2.png)
+![DUBLIN2](assets/docs/images/wireframe/wireframe-dublin2.png)
 
  - Dublin6 cafes
 
-![DUBLIN6](assets/docs/images/wireframe-dublin6.png)
+![DUBLIN6](assets/docs/images/wireframe/wireframe-dublin6.png)
 
  - Dublin8 cafes
 
-![DUBLIN8](assets/docs/images/wireframe-dublin8.png)
+![DUBLIN8](assets/docs/images/wireframe/wireframe-dublin8.png)
 
  - Top3 page
 
-![TOP3](assets/docs/images/wireframe-top3.png)
+![TOP3](assets/docs/images/wireframe/wireframe-top3.png)
 
  - Contact
  
-![CONTACT](assets/docs/images/wireframe-contact.png)
+![CONTACT](assets/docs/images/wireframe/wireframe-contact.png)
 
 
 ### Surface
@@ -410,7 +410,7 @@ Credit to [this link](https://www.codeexplained.org/2018/10/create-multiple-choi
  #### Validation
  - [W3C Markup Validator](https://validator.w3.org/) : 
 
- All pages have no issue found.
+ All pages have no issue found. same comments such as  blows image with all the pages
 
  ![W3C Markup Validator](assets/docs/images/form-test/w3c-validator.png)
 
@@ -418,7 +418,7 @@ Credit to [this link](https://www.codeexplained.org/2018/10/create-multiple-choi
 
  - [W3C CSS Vaildator](https://jigsaw.w3.org/css-validator/) 
 
-  All pages have no issue found.
+  All pages have no issue found. same comments such as  blows image with all the pages
  ![W3C CSS Validator](assets/docs/images/form-test/css-validator.png)
 
 
@@ -426,24 +426,37 @@ Credit to [this link](https://www.codeexplained.org/2018/10/create-multiple-choi
 
 
 #### project bug and solution
-![bug1](assets/docs/images/)
+
+  - bug1
+
+![bug1](assets/docs/images/bug/bug1.png)
+
+This bug occured in mobile views. I coudn't figue out the margin issue with footer. Which supposed to fixed on conter in various mobile devices. I got help from tutor and media quary I rid of pull-right from css stlye and add margin 10 auto to make center. The bug fixed.
 
 
- comment
 
 
-![bug2](assets/docs/images/)
+  - bug2
+  
+  ![bug2](assets/docs/images/bug/bug2.png)
+
+This bug occured on tablet view. I add min-width 250 and with media quary I add another css to be min-width 200, also adjusted margin size. it got fixed
+
+  - bug3 
+
+  ![bug3](assets/docs/images/bug/bug3.png)
+
+ On question.js, the suggested (model4) was keep shows on all the options below, I relised that I 
+
+  - bug4
+
+  All the images was too big size, it delayed loading time. My montor advised me to compress all the image size. I used [this site]((https://tinyjpg.com/)) to compress all the iamges and test on my old laptop. it loads faster than before.
 
 
-
-![bug3](assets/docs/images/)
-
-comment
-
-  - comment
   
   
-#### Testing User Stories from User Experience (UX) section
+  
+### Testing User Stories from User Experience (UX) section
 
  - Testing user story goal
 
