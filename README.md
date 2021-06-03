@@ -90,8 +90,7 @@ As Regular User:
 
 “ This recommended cafe list need to get updates in my area as there are new cafes open recently. As long as there are more cafes I can search I’ll return.”
 
-“ As a regular user, I want to see other cafe reviews in other area in Ireland. I sometime need to go other place far from my area, want to check out nice cafe there too.”
-
+“ I love coffee and cafes but not sure I know about coffee well.”
 
 ### Scope
 ---
@@ -267,7 +266,7 @@ There are three questsions with options to choose. after the question, user woul
 
 ### COFFEEQUIZ
 
-There are three quizs with timer function and progess bar and shows the correct answer with green color and orange color with wrong answer. End of quiz get the percentage of quiz answer result with friendly image and comments. 
+There are four quizs with timer function and progess bar and shows the correct answer with green color and orange color with wrong answer. End of quiz get the percentage of quiz answer result with friendly image and comments. 
 
 
 
@@ -422,6 +421,7 @@ Credit to [this link](https://www.codeexplained.org/2018/10/create-multiple-choi
  - [W3C CSS Vaildator](https://jigsaw.w3.org/css-validator/) 
 
   All pages have no issue found. same comments such as  blows image with all the pages
+
  ![W3C CSS Validator](assets/docs/images/form-test/css-validator.png)
 
 
@@ -449,13 +449,13 @@ This bug occured on tablet view. I add min-width 250 and with media quary I add 
 
   ![bug3](assets/docs/images/bug/bug3.png)
 
- On question.js, the suggested (model4) was keep shows on bottom of question , I relised that I made mistake on speling (model-split->modal-split). Fixed.
+ On question.js, the suggested (model4) was keep shows on bottom of question , I realized that I made mistake on speling (model-split->modal-split). Fixed.
 
   - bug4
 
   ![bug4](assets/docs/images/bug/bug4.png)
 
-  On question.js, function didn't work and it show error and I relised that suggestions should be more option to fit the function requirement. Becaues there are  only 12 objects, some of options doesn't fit with suggestion. I add more cafes on suggestions, so function has more flexiblity to run. 
+  On question.js, function didn't work and it show error and I realized that suggestions should be more option to fit the function requirement. Becaues there are  only 12 objects, some of options doesn't fit with suggestion. I add more cafes on suggestions, so function has more flexiblity to run. 
 
 
   - bug5
@@ -472,21 +472,37 @@ This bug occured on tablet view. I add min-width 250 and with media quary I add 
 
 “ There are so many cafes in my area, I don’t have time and money to check all the place, I want to find right cafe for me when I need to grab a nice cup of coffee”
 
+  -> I just want to know nearlest located cafe from my place and this webstie help me to find very easily"
+
 “ As crazy coffee lover, I want to find right cafe where serves  good coffee  and unique taste and new experience.”
+
+   -> there is find your cafe search tool help me to find best place for me
 
 “ I don’t know about coffee but I love to having nice brunch with my family on my weekend. I want to find nice cafe with food and good space to enjoy my weekend.”
 
+  -> I check the few cafes near my place and few of cafes serve food and many sits there, I think I found perfect cafe for me
+
 “ Sometime I want to have nice treat for myself with delicious dessert and nice coffee in cozy cafe near by my place”
+
+   -> living in Dublin8, I found nice dessert place from the list
 
   * ##### As Regular User:
 
 “ I know good place for coffee, I want to try best cafe for food and dessert too”
 
+  -> Top3 pages help me to challange myself to try food and dessert in cafe far from my place too
+
 “Due to Covid situation, I don’t go far from my area, I love to discover nice cafe around my area and experience  according to reviews”
+
+  -> I discovered some cafe hiden my area, it was great experience. 
 
 “ This recommended cafe list need to get updates in my area as there are new cafes open recently. As long as there are more cafes I can search I’ll return.”
 
-“ As a regular user, I want to see other cafe reviews in other area in Ireland. I sometime need to go other place far from my area, want to check out nice cafe there too.”
+  -> I tried most of cafes around my area, I loved to try other cafes accoding the top3
+
+“ I love coffee and cafes but not sure I know about coffee well.”
+
+  -> coffeequiz was interesting, I didn't know what milk does for coffee, it was great quiz to get some knowlege about coffee
 
 
 

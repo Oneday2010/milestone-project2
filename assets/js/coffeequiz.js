@@ -19,7 +19,7 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create coffee questions
 let questions = [{
         question: "The meaning of the term “espresso” is…",
-        imgSrc: "assets/images/questions/espresso.png",
+        imgSrc: "assets/images/coffeequiz/espresso.png",
         choiceA: "Forced out",
         choiceB: "Expressive",
         choiceC: "Under pressure",
