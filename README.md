@@ -502,15 +502,15 @@ This form is asking user four questions about coffee and shows the scoring base 
 
 ## Deployment
 ---
-    1)Firstly I create the account part of my CSS course on code institute. After practising the mini-project, I could get the idea to use Gitpod as well as GitHub. I created a new repository to start my project and put the name  “milestone-project1”
+    1) Firstly I create the account part of my CSS course on code institute. After practising the mini-project, I could get the idea to use Gitpod as well as GitHub. I created a new repository to start my project and put the name  “milestone-project1”
 
-    2)After getting my repository for my project I start work all coding and update all my files on Gitpod. 
+    2) After getting my repository for my project I start work all coding and update all my files on Gitpod. 
 
-    3)Gitpod, a cloud-based version control software or IDE was used to write all code for this project. 
+    3) Gitpod, a cloud-based version control software or IDE was used to write all code for this project. 
 
-    4)Each day when I finished, I save the data and when all the work was done, I went to Github pages and check the setting menu and found the Github pages. I selected the Master Branch and it automatically creates a URL address. 
+    4) Each day when I finished, I save the data and when all the work was done, I went to Github pages and check the setting menu and found the Github pages. I selected the Master Branch and it automatically creates a URL address. 
 
-    5)To access the code, I can get a clone that provides an URL and I can use my phone or any device, or download it as a zip file on the device. 
+    5) To access the code, I can get a clone that provides an URL and I can use my phone or any device, or download it as a zip file on the device. 
 
 
 
