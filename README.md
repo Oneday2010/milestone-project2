@@ -394,7 +394,7 @@ This form is asking user four questions about coffee and shows the scoring base 
 
    - Contact ![mobile friendly test - Contact](assets/docs/images/form-test/mobileTest-contact.png)
 
-   - Questions  ![mobile friendly test - Questions](assets/docs/images/form-test/)mobileTest-questions.png)
+   - Questions  ![mobile friendly test - Questions](assets/docs/images/form-test/mobileTest-questions.png)
 
    - Coffeequiz ![mobile friendly test - Coffeequiz](assets/docs/images/form-test/mobileTest-coffeequiz.png)
  
