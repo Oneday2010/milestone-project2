@@ -19,7 +19,7 @@
 
  #container {
      margin: 100px auto;
-      background-color: var(--bodyContainerColor);
+     background-color: var(--bodyContainerColor);
      height: 400px;
      width: 700px;
      border-radius: 25px;
@@ -207,4 +207,11 @@
      left: 300px;
      font-weight: 500;
 
+ }
+
+ a {
+     margin-left: 20px;
+     text-decoration: none;
+     color:#ff7551;
+     font-size: 18px;
  }
