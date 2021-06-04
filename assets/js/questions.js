@@ -1,6 +1,5 @@
 //--------------------------------- Modal //
-// CREDIT base of modal: https://codepen.io/Ayn_/pen/vmVKZV
-// CREDIT maps: https://www.embedgooglemap.net/
+// Credit to [rudgerga](https://github.com/rudberga/CI-MS2-inspiry-tokyo) / [codepen](https://codepen.io/Ayn_/pen/vmVKZV)
 
 var cafeList = [
     //1
@@ -102,6 +101,8 @@ var cafeList = [
         review: "<a href = 'https://mindfulmapping.wordpress.com/2017/05/18/brother-hubbard-south/' target = '_blank'>Click here</a>"
     }
 ];
+
+// there are some suggestions does't match with above cafe, input extra options to make final result
 var suggestions = {
     food: "1,3,5,6,7,8,9",
     dessert: "2,3,4,5,10,11,12",
@@ -140,53 +141,53 @@ function prep_modal() {
             pages.hide();
             pages.eq(0).show();
 
-            var b_button = document.createElement("button");
-            b_button.setAttribute("type", "button");
-            b_button.setAttribute("class", "btn btn-light");
-            b_button.setAttribute("style", "display: none;");
-            b_button.innerHTML = "Back";
+            var backButton = document.createElement("button");
+            backButton.setAttribute("type", "button");
+            backButton.setAttribute("class", "btn btn-light");
+            backButton.setAttribute("style", "display: none;");
+            backButton.innerHTML = "Back";
 
-            var n_button = document.createElement("button");
-            n_button.setAttribute("type", "button");
-            n_button.setAttribute("class", "btn btn-light");
-            n_button.setAttribute("id", "nextBtn");
+            var nextButton = document.createElement("button");
+            nextButton.setAttribute("type", "button");
+            nextButton.setAttribute("class", "btn btn-light");
+            nextButton.setAttribute("id", "nextBtn");
             //Disable the NEXT button Until a selection is chose
-            n_button.disabled = true;
-            n_button.innerHTML = "Next";
+            nextButton.disabled = true;
+            nextButton.innerHTML = "Next";
 
-            $(this).find(".modal-footer").append(b_button).append(n_button);
+            $(this).find(".modal-footer").append(backButton).append(nextButton);
 
-            var page_track = 0;
+            var pageCount = 0;
 
-            $(n_button).click(function () {
+            $(nextButton).click(function () {
                 this.blur();
                 //Disable the NEXT button until a selection is chose
-                n_button.disabled = true;
+                nextButton.disabled = true;
 
-                if (page_track == 0) {
-                    $(b_button).show();
+                if (pageCount == 0) {
+                    $(backButton).show();
                 }
 
-                if (page_track <= pages.length - 2) {
+                if (pageCount <= pages.length - 2) {
                     //Push the selection in the Temporal Array (See HTML attribute "DATA-SUGGEST" on each selection)
                     selections.push($(".selected").attr("data-suggest"));
                     //Remove the selected class on every selection
                     $(".radio").removeClass("selected");
                 }
 
-                if (page_track == pages.length - 2) {
+                if (pageCount == pages.length - 2) {
                     //When all three selections chose, loop through the temporal array to return a Suggestion
                     selections.map(sel => {
                         suggest(sel);
                     });
-                    $(n_button).text("Finish");
-                    n_button.disabled = false;
+                    $(nextButton).text("Finish");
+                    nextButton.disabled = false;
                 }
 
-                if (page_track == pages.length - 1) {
-                    page_track = -1;
-                    $(n_button).text("Next");
-                    $(b_button).hide();
+                if (pageCount == pages.length - 1) {
+                    pageCount = -1;
+                    $(nextButton).text("Next");
+                    $(backButton).hide();
                     $("#myModal").modal("hide");
                     document.getElementById("name").innerHTML = "";
                     document.getElementById("food").innerHTML = "";
@@ -199,35 +200,35 @@ function prep_modal() {
                     selections = [];
                 }
 
-                if (page_track < pages.length - 1) {
-                    page_track++;
+                if (pageCount < pages.length - 1) {
+                    pageCount++;
 
                     pages.hide();
-                    pages.eq(page_track).show();
+                    pages.eq(pageCount).show();
                 }
             });
 
-            $(b_button).click(function () {
+            $(backButton).click(function () {
                 //Empty the final arrays when BACK is pressed
                 inputs = [];
                 suggested = [];
                 //Remove the last element in the temporal array
                 selections.pop();
                 //Disable the NEXT button everytime BACK is pressed
-                n_button.disabled = true;
-                if (page_track == 1) {
-                    $(b_button).hide();
+                nextButton.disabled = true;
+                if (pageCount == 1) {
+                    $(backButton).hide();
                 }
 
-                if (page_track == pages.length - 1) {
-                    $(n_button).text("Next");
+                if (pageCount == pages.length - 1) {
+                    $(nextButton).text("Next");
                 }
 
-                if (page_track > 0) {
-                    page_track--;
+                if (pageCount > 0) {
+                    pageCount--;
 
                     pages.hide();
-                    pages.eq(page_track).show();
+                    pages.eq(pageCount).show();
                 }
             });
         }
@@ -236,7 +237,6 @@ function prep_modal() {
 
 $(document).ready(function () {
     $(".radio-group .radio").click(function () {
-        $(".selected .fa").removeClass("fa-check");
         $(".radio").removeClass("selected");
         $(this).addClass("selected");
         //Remove the disabled attribute of the NEXT button upon selection
